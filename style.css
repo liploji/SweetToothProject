@@ -24,6 +24,10 @@
   background-color: #c983c9;
 }
 
+.st-header {
+  background-color: #f4d5c0;
+}
+
 .st-navbar {
   height: 80px;
   background: #d8c0d8;
@@ -37,12 +41,14 @@
 }
 
 .st-button {
-  width: 200px;
+  width: 20vw;
+  max-width: 200px;
   height: 55px;
   background: #d8c0d8;
   border: 1px solid #c983c9;
   border-radius: 5px;
   color: #c983c9;
+  font-weight: 600;
 }
 
 .st-button:hover {
@@ -52,8 +58,7 @@
 
 .st-main {
   background-color: #f4d5c0;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  padding: 50px;
 }
 
 .st-container {
@@ -61,14 +66,36 @@
   background: #f4e3d7;
   border: 5px solid #eca779;
   border-radius: 20px;
+  width: 100%;
+}
+
+.st-content {
+  padding: 50px;
+  height: 100%;
 }
 
 .st-footer {
   height: 100px;
   background: #d8c0d8;
   border-top: 5px solid #c983c9;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
-.content {
-  padding: 50px;
+.st-footer-block {
+  width: 50%;
+}
+
+.st-footer-block-inner {
+  padding: 10px 10px 0px 10px;
+}
+
+.st-divider {
+  border-left: 5px solid #c983c9;
+  height: 100%;
+}
+
+.st-title {
+  overflow-x: visible;
+  text-align: center;
 }
