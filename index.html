@@ -5,19 +5,24 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sweet Tooth</title>
-
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style.css" type="text/css" />
   </head>
   <body>
+    <div id="cart-modal"></div>
+    <div id="cart">CART</div>
+
     <header class="d-flex row st-header">
       <div class="d-flex justify-content-center align-items-center st-logo">
-        <img src="./assets/placeholder.png" alt="" width="240" height="80" />
+        <a href="index.html"
+          ><img src="./assets/logo.png" alt="Logo" height="114"
+        /></a>
       </div>
       <nav class="d-flex justify-content-evenly align-items-center st-navbar">
         <a href="index.html" style="text-decoration: none"
@@ -48,9 +53,24 @@
             About us
           </div></a
         >
+        <div
+          class="d-flex justify-content-evenly align-items-center st-cart-button"
+        >
+          <img
+            id="cart1"
+            class="st-cart-icon"
+            src="./assets/cart-icon-dark.svg"
+            alt="cart icon"
+          />
+          <img
+            id="cart2"
+            class="st-cart-icon"
+            src="./assets/cart-icon-light.svg"
+            alt="cart icon"
+          />
+        </div>
       </nav>
     </header>
-
     <main class="st-main">
       <div class="st-container">
         <div class="st-content">
@@ -132,13 +152,13 @@
     <footer class="d-flex st-footer">
       <div class="st-footer-block">
         <div class="st-footer-block-inner">
-          <spam>PLACEHOLDER</spam>
+          <span>PLACEHOLDER</span>
         </div>
       </div>
       <div class="st-divider"></div>
       <div class="st-footer-block">
         <div class="st-footer-block-inner">
-          <spam>PLACEHOLDER</spam>
+          <span>PLACEHOLDER</span>
         </div>
       </div>
     </footer>
@@ -148,5 +168,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
