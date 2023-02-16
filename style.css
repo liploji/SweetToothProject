@@ -40,6 +40,11 @@
   border-color: #c983c9;
 }
 
+#navbar2 {
+  padding: 0px 50px;
+  display: none !important;
+}
+
 .st-button {
   width: 15vw;
   max-width: 200px;
@@ -66,12 +71,31 @@
   width: 30px;
 }
 
+.st-menu-button {
+  width: 55px;
+  height: 55px;
+  background-color: #d8c0d8;
+  border: 1px solid #c983c9;
+  border-radius: 50%;
+  color: #c983c9;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.st-menu-icon {
+  width: 30px;
+}
+
 .st-button:hover {
   background-color: #c983c9;
   color: #d8c0d8;
 }
 
 .st-cart-button:hover {
+  background-color: #c983c9;
+}
+
+.st-menu-button:hover {
   background-color: #c983c9;
 }
 
@@ -134,4 +158,18 @@
   height: 1024px;
   background-color: white;
   right: -300px;
+}
+
+@media only screen and (max-width: 600px) {
+  .st-button {
+    display: none !important;
+  }
+
+  #navbar1 {
+    display: none !important;
+  }
+
+  #navbar2 {
+    display: flex !important;
+  }
 }
