@@ -45,3 +45,6 @@ $("#menu-modal").click(() => {
   $("#menu-modal").fadeOut();
   $("#menu").animate({ right: "-300px" });
 });
+
+
+//For reviews, create a way to calculate overall rating using given the ratings of reviews provided on the site
