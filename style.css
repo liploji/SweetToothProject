@@ -105,7 +105,6 @@
 }
 
 .st-container {
-  height: 620px;
   background-color: #f4e3d7;
   border: 5px solid #eca779;
   border-radius: 20px;
@@ -158,6 +157,28 @@
   height: 1024px;
   background-color: white;
   right: -300px;
+}
+/* #rating {
+  display: inline-flex; FIX - Display inline with previous element 
+} */
+
+.reviews h3 {
+  overflow-x: visible;
+}
+
+.reviews h5 {
+  overflow-x: visible;
+  font-style: italic;
+  padding-top: 10px;
+}
+
+.reviews p {
+  background-color: lavender;
+  border: 2px solid black;
+}
+
+.form h4 {
+  overflow-x: visible;
 }
 
 @media only screen and (max-width: 600px) {
