@@ -3,6 +3,15 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
+  font-family: Roboto, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
 }
 
 .test1 {
@@ -46,7 +55,7 @@
 }
 
 .st-button {
-  width: 15vw;
+  width: 10vw;
   max-width: 200px;
   height: 55px;
   background-color: #d8c0d8;
@@ -117,11 +126,9 @@
 }
 
 .st-footer {
-  height: 100px;
+  height: 150px;
   background-color: #d8c0d8;
   border-top: 5px solid #c983c9;
-  padding-left: 20px;
-  padding-right: 20px;
 }
 
 .st-footer-block {
@@ -129,12 +136,35 @@
 }
 
 .st-footer-block-inner {
-  padding: 10px 10px 0px 10px;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .st-divider {
   border-left: 5px solid #c983c9;
   height: 100%;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+.st-footer-icon {
+  float: left;
+  width: 20px;
+  margin-right: 10px;
+}
+
+.st-footer-item {
+  margin-bottom: 5px;
+  color: white;
+}
+
+a {
+  text-decoration: none;
 }
 
 .st-title {
@@ -146,7 +176,7 @@
   position: absolute;
   z-index: 3;
   width: 100%;
-  height: 1024px;
+  height: 100%;
   background-color: #4141414e;
 }
 
@@ -154,10 +184,67 @@
   position: absolute;
   z-index: 3;
   width: 300px;
-  height: 1024px;
+  height: 100%;
   background-color: white;
   right: -300px;
 }
+
+#menu-modal {
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  background-color: #4141414e;
+}
+
+#menu {
+  position: absolute;
+  z-index: 3;
+  width: 300px;
+  height: 100%;
+  background-color: #d8c0d8;
+  left: -300px;
+}
+
+.st-close-button {
+  text-align: center;
+  margin: 10px 0px 10px 20px;
+  border: 1px solid #c983c9;
+  width: 25px;
+  height: 25px;
+  border-radius: 100%;
+  color: #c983c9;
+}
+
+.st-close-button:hover {
+  background-color: #c983c9;
+  color: #d8c0d8;
+  cursor: pointer;
+}
+
+.st-menu-inner-button-f {
+  text-align: center;
+  padding: 10px 0px;
+  border-top: 2px solid #c983c9;
+  border-bottom: 2px solid #c983c9;
+  color: #c983c9;
+  font-weight: 600;
+}
+
+.st-menu-inner-button {
+  text-align: center;
+  padding: 10px 0px;
+  border-bottom: 2px solid #c983c9;
+  color: #c983c9;
+  font-weight: 600;
+}
+
+.st-menu-inner-button:hover,
+.st-menu-inner-button-f:hover {
+  background-color: #c983c9;
+  color: #d8c0d8;
+}
+
 /* #rating {
   display: inline-flex; FIX - Display inline with previous element 
 } */
@@ -181,7 +268,7 @@
   overflow-x: visible;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1000px) {
   .st-button {
     display: none !important;
   }
