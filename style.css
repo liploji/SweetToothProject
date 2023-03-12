@@ -62,7 +62,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 5px;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-cart-button {
@@ -72,7 +72,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 50%;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 50%;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -139,7 +139,7 @@ body {
   padding-top: 10px;
   padding-left: 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-divider {
@@ -207,6 +207,7 @@ a {
 }
 
 .st-close-button {
+  overflow-x: visible;
   text-align: center;
   margin: 10px 0px 10px 20px;
   border: 1px solid #c983c9;
@@ -228,7 +229,7 @@ a {
   border-top: 2px solid #c983c9;
   border-bottom: 2px solid #c983c9;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-menu-inner-button {
@@ -236,7 +237,7 @@ a {
   padding: 10px 0px;
   border-bottom: 2px solid #c983c9;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-menu-inner-button:hover,
