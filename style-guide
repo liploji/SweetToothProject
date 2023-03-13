@@ -1,8 +1,8 @@
 colors: {
-    PRIMARY300: #F4E3D7,
-    PRIMARY500: #F4D5C0,
-    PRIMARY700: #ECA779,
-    SECONDARY300: #E8E3E8,
-    SECONDARY500: #D8C0D8,
-    SECONDARY700: #C983C9,
+    PRIMARY300: #F4E3D7, (very light shade of orange)
+    PRIMARY500: #F4D5C0, (very light shade of orange)
+    PRIMARY700: #ECA779, (pastel orange)
+    SECONDARY300: #E8E3E8, (very light shade of magenta)
+    SECONDARY500: #D8C0D8, (very light shade of magenta)
+    SECONDARY700: #C983C9, (pastel magenta)
 }

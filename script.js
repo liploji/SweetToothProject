@@ -4,6 +4,7 @@ $(document).ready(function () {
   $(".menu1").show();
   $(".menu2").hide();
   $("#cart-modal").hide();
+  $("#menu-modal").hide();
 });
 
 $(".st-cart-button").hover(() => {
@@ -43,8 +44,12 @@ $("#cart-modal").click(() => {
 
 $("#menu-modal").click(() => {
   $("#menu-modal").fadeOut();
-  $("#menu").animate({ right: "-300px" });
+  $("#menu").animate({ left: "-300px" });
 });
 
+$("#close-menu").click(() => {
+  $("#menu-modal").fadeOut();
+  $("#menu").animate({ left: "-300px" });
+});
 
 //For reviews, create a way to calculate overall rating using given the ratings of reviews provided on the site

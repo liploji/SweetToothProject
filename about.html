@@ -15,16 +15,53 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="d-flex row test2">
+    <div id="cart-modal"></div>
+    <div id="cart">CART</div>
+    <div id="menu-modal"></div>
+    <div id="menu">
+      <div id="close-menu" class="st-close-button">X</div>
+      <a href="./index.html">
+        <div class="st-menu-inner-button-f">Home</div>
+      </a>
+      <a href="./about.html">
+        <div class="st-menu-inner-button">About Us</div>
+      </a>
+      <a href="./contacts.html">
+        <div class="st-menu-inner-button">Contact Us</div>
+      </a>
+      <a href="./faq.html">
+        <div class="st-menu-inner-button">FAQ</div>
+      </a>
+      <a href="./products.html">
+        <div class="st-menu-inner-button">Products</div>
+      </a>
+      <a href="./reviews.html">
+        <div class="st-menu-inner-button">Reviews</div>
+      </a>
+    </div>
+
+    <header class="d-flex row st-header">
       <div class="d-flex justify-content-center align-items-center st-logo">
-        <img src="./assets/placeholder.png" alt="" width="240" height="80" />
+        <a href="index.html"
+          ><img src="./assets/logo.png" alt="Logo" height="114"
+        /></a>
       </div>
-      <nav class="d-flex justify-content-evenly align-items-center st-navbar">
+      <nav
+        id="navbar1"
+        class="d-flex justify-content-evenly align-items-center st-navbar"
+      >
         <a href="index.html" style="text-decoration: none"
           ><div
             class="d-flex justify-content-evenly align-items-center st-button"
           >
             Home
+          </div></a
+        >
+        <a href="about.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            About Us
           </div></a
         >
         <a href="contacts.html" style="text-decoration: none"
@@ -41,13 +78,68 @@
             FAQ
           </div></a
         >
-        <a href="about.html" style="text-decoration: none"
+        <a href="products.html" style="text-decoration: none"
           ><div
             class="d-flex justify-content-evenly align-items-center st-button"
           >
-            About Us
+            Products
           </div></a
         >
+        <a href="reviews.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            Reviews
+          </div></a
+        >
+
+        <div
+          class="d-flex justify-content-center align-items-center st-cart-button"
+        >
+          <img
+            class="st-cart-icon cart1"
+            src="./assets/cart-icon-dark.svg"
+            alt="cart icon"
+          />
+          <img
+            class="st-cart-icon cart2"
+            src="./assets/cart-icon-light.svg"
+            alt="cart icon"
+          />
+        </div>
+      </nav>
+      <nav
+        id="navbar2"
+        class="d-flex justify-content-between align-items-center st-navbar"
+      >
+        <div
+          class="d-flex justify-content-center align-items-center st-menu-button"
+        >
+          <img
+            class="st-menu-icon menu1"
+            src="./assets/menu-icon-dark.svg"
+            alt="menu icon"
+          />
+          <img
+            class="st-menu-icon menu2"
+            src="./assets/menu-icon-light.svg"
+            alt="menu icon"
+          />
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center st-cart-button"
+        >
+          <img
+            class="st-cart-icon cart1"
+            src="./assets/cart-icon-dark.svg"
+            alt="cart icon"
+          />
+          <img
+            class="st-cart-icon cart2"
+            src="./assets/cart-icon-light.svg"
+            alt="cart icon"
+          />
+        </div>
       </nav>
     </header>
 
@@ -60,24 +152,58 @@
       </div>
     </main>
 
-    <footer class="d-flex st-footer">
-      <div class="st-footer-block">
-        <div class="st-footer-block-inner">
-          <spam>PLACEHOLDER</spam>
+    <footer>
+      <div class="d-flex st-footer">
+        <div class="st-footer-block">
+          <div class="st-footer-block-inner">
+            <a href="#instagram"
+              ><img
+                class="st-footer-icon"
+                src="./assets/instagram-icon.svg"
+                alt="instagram icon"
+              />
+              <div class="st-footer-item">@SweetTooth</div></a
+            >
+            <a href="#facebook"
+              ><img
+                class="st-footer-icon"
+                src="./assets/facebook-icon.svg"
+                alt="facebook icon"
+              />
+              <div class="st-footer-item">SweetTooth</div></a
+            >
+            <div class="st-footer-item">
+              Developed by: Bruno, Katherine, Mikaela and Zeldrix
+            </div>
+          </div>
+        </div>
+        <div class="st-divider"></div>
+        <div class="st-footer-block">
+          <div class="st-footer-block-inner">
+            <ul>
+              <a href="about.html"><li class="st-footer-item">About Us</li></a>
+              <a href="contacts.html"
+                ><li class="st-footer-item">Contact Us</li></a
+              >
+              <a href="faq.html"><li class="st-footer-item">FAQ</li></a>
+              <a href="products.html"><li class="st-footer-item">Products</li></a>
+              <a href="reviews.html"><li class="st-footer-item">Reviews</li></a>
+            </ul>
+          </div>
         </div>
       </div>
-      <div class="st-divider"></div>
-      <div class="st-footer-block">
-        <div class="st-footer-block-inner">
-          <spam>PLACEHOLDER</spam>
+        <div class="st-copyright">
+          <p> &copy 2023 SweetTooth Bakery</p>
         </div>
-      </div>
     </footer>
+    
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
   </body>
 </html>
