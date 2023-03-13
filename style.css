@@ -282,3 +282,14 @@ a {
     display: flex !important;
   }
 }
+
+.st-copyright{
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 27px;
+  font-size: 12px;
+  text-align: center;
+  background-color:#c983c9;
+  overflow-y: hidden;
+}
