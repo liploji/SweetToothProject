@@ -264,22 +264,22 @@ a {
   display: inline-flex; FIX - Display inline with previous element 
 } */
 
-.reviews h3 {
+.st-reviews h3 {
   overflow-x: visible;
 }
 
-.reviews h5 {
+.st-reviews h5 {
   overflow-x: visible;
   font-style: italic;
   padding-top: 10px;
 }
 
-.reviews p {
+.st-reviews p {
   background-color: lavender;
   border: 2px solid black;
 }
 
-.form h4 {
+.st-review-form h4 {
   overflow-x: visible;
 }
 

@@ -154,9 +154,9 @@
         <div class="st-content">
           <h1 class="st-title">Reviews</h1>
           <!--Actual content below-->
-          <div class="reviews">
+          <div class="st-reviews">
             <h3>Reviews of Previous Customers:</h3>
-            <h3 id="rating">Overall Rating:</h3>
+            <h3 id="st-rating">Overall Rating:</h3> <!--Rating made of stars, for each review and overall, use bright orange-->
             <h5>Customer Name</h5>
             <p>
               Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
@@ -196,13 +196,36 @@
               Deleniti labore magnam quae iste quia ullam distinctio, <br />
               natus molestias recusandae voluptas a accusamus facere. <br />
             </p>
-            <div class="form">
-              <h4>
+            <div class="st-review-form">
+              <h6>
                 If you would like to share your experience with our business,
                 please fill out the form below!
-              </h4>
-              <h4>All feedback is appreciated!</h4>
-              <form></form>
+              </h6>
+              <h5>All feedback is appreciated!</h5>
+              <hr>
+
+              <form name="review_form" action="submit.php" method="post">
+                <h3>Review Form:</h3>
+                First name: <input type="text" name="first_name"> <br>
+                Which product did you purchase? <br>
+                <select name="product_type">
+                  <optgroup label="Simple Cakes">
+                    <option value="C1"> Chocolate </option>
+                    <option value="C2"> Birthday </option> 
+                    <option value="C3"> Strawberry Shortcake </option>
+                  </optgroup>
+                  <optgroup label="Cupcakes">
+                    <option value="CP1"> Chocolate </option>
+                    <option value="CP2"> Red Velvet </option> 
+                  </optgroup> 
+
+                  <optgroup label="Cookies">
+                    <option value="Ck1"> Chocolate Chip </option>
+                    <option value="Ck2"> Macadamia </option> 
+                  </optgroup>    
+                </select>
+              </form>
+
             </div>
           </div>
         </div>
