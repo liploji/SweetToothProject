@@ -264,9 +264,14 @@ a {
   float: left;
   padding-right: 20px;
 }
-/* #st-rating {
-  display: inline-flex; //FIX - Display inline with previous element 
-} */
+
+ .filled {
+  display: inline-block;
+  color: #ECA779;
+ }
+ .blank {
+  color: white;
+ }
 
 .st-reviews h6 {
   overflow-x: visible;
@@ -276,6 +281,15 @@ a {
   overflow-x: visible;
   font-style: italic;
   padding-top: 10px;
+}
+
+.st-reviews-form p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+
+.st-reviews select {
+  display: inline-block;
 }
 
 .st-reviews p {

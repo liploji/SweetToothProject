@@ -19,6 +19,7 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   </head>
   <body>
     <div id="cart-modal"></div>
@@ -155,8 +156,12 @@
           <h1 class="st-title">Reviews</h1>
           <!--Actual content below-->
           <div class="st-reviews">
-            <h4 id="st-review-title">Reviews of Previous Customers:</h3>
-            <h4 id="st-rating">Overall Rating:</h3> <!--Rating made of stars, for each review and overall, use bright orange-->
+            <h4 id="st-rating">Overall Rating:</h3>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star blank"></span> <!--Rating made of stars, for each review and overall, use bright orange-->
             
               <h6>From Customer Name</h6>
             <p>
@@ -203,36 +208,37 @@
               </h6>
             <h6>All feedback is appreciated!</h6>
             <hr>
-            <div class="st-review-form">
-              <form name="review_form" action="submit.php" method="post">
-                <h3>Review Form:</h3>
-                First name: <input type="text" name="first_name"> <br>
-                Which product did you purchase? <br>
+          </div>
+          <div class="st-review-form">
+            <form name="review_form" action="submit.php" method="post">
+              <h3>Review Form:</h3>
+              First name: <input type="text" name="first_name"> <br>
 
-                <label for="product_list">List of products: </label> 
-                <select name="product_type">
-                  <optgroup label="Cakes">
-                    <option value="C1"> Chocolate </option>
-                    <option value="C2"> Strawberry Shortcake </option>
-                    <option value="C2"> Red Velvet </option>
-                    <option value="C3"> Strawberry Crispy Shortcake Pie</option>
-                  </optgroup>
+              <p>Which product did you purchase?</p> 
 
-                  <optgroup label="Cupcakes">
-                    <option value="CP1"> Chocolate </option>
-                    <option value="CP2"> Red Velvet </option> 
-                  </optgroup> 
+              <label for="product_list">List of products:</label> 
+              <select name="product_type">
+                <optgroup label="Cakes">
+                  <option value="C1"> Chocolate </option>
+                  <option value="C2"> Strawberry Shortcake </option>
+                  <option value="C2"> Red Velvet </option>
+                  <option value="C3"> Strawberry Crispy Shortcake Pie</option>
+                </optgroup>
 
-                  <optgroup label="Cookies">
-                    <option value="Ck1"> Chocolate Chip </option>
-                    <option value="Ck2"> Macadamia </option> 
-                    <option value="Ck3"> Oatmeal & Chocolate </option> 
-                  </optgroup>    
-                </select> <br>
-                Other (Customized, etc): <input type="text" name="order">
-              </form>
+                <optgroup label="Cupcakes">
+                  <option value="CP1"> Chocolate </option>
+                  <option value="CP2"> Red Velvet </option> 
+                </optgroup> 
 
-            </div>
+                <optgroup label="Cookies">
+                  <option value="Ck1"> Chocolate Chip </option>
+                  <option value="Ck2"> Double Chocolate </option> 
+                  <option value="Ck3"> Oatmeal & Chocolate Chip </option> 
+                </optgroup>    
+              </select> <br>
+              Other (Customized, etc): <input type="text" name="order">
+            </form>
+
           </div>
         </div>
       </div>
