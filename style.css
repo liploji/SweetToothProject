@@ -126,7 +126,8 @@ body {
 }
 
 .st-footer {
-  height: 150px;
+  min-height: 95px;
+  max-height: 120px;
   background-color: #d8c0d8;
   border-top: 5px solid #c983c9;
 }
@@ -135,7 +136,14 @@ body {
   width: 50%;
 }
 
-.st-footer-block-inner {
+.st-footer-block-inner1 {
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+.st-footer-block-inner2 {
+  width: 50%;
   padding-top: 10px;
   padding-left: 20px;
   font-size: 14px;
@@ -144,7 +152,8 @@ body {
 
 .st-divider {
   border-left: 5px solid #c983c9;
-  height: 100%;
+  min-height: 95px;
+  max-height: 120px;
 }
 
 ul {
@@ -159,6 +168,11 @@ ul {
 }
 
 .st-footer-item {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.st-footer-item a {
   margin-bottom: 5px;
   color: white;
 }
@@ -250,22 +264,22 @@ a {
   display: inline-flex; FIX - Display inline with previous element 
 } */
 
-.reviews h3 {
+.st-reviews h3 {
   overflow-x: visible;
 }
 
-.reviews h5 {
+.st-reviews h5 {
   overflow-x: visible;
   font-style: italic;
   padding-top: 10px;
 }
 
-.reviews p {
+.st-reviews p {
   background-color: lavender;
   border: 2px solid black;
 }
 
-.form h4 {
+.st-review-form h4 {
   overflow-x: visible;
 }
 
@@ -283,13 +297,13 @@ a {
   }
 }
 
-.st-copyright{
+.st-copyright {
   color: white;
   padding-top: 5px;
   padding-bottom: 5px;
   height: 27px;
   font-size: 12px;
   text-align: center;
-  background-color:#c983c9;
+  background-color: #c983c9;
   overflow-y: hidden;
 }

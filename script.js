@@ -5,6 +5,11 @@ $(document).ready(function () {
   $(".menu2").hide();
   $("#cart-modal").hide();
   $("#menu-modal").hide();
+  if ($(window).width() <= 1000) {
+    $("#carousel-img-1").attr("src", "./assets/offer1-small.png");
+    $("#carousel-img-2").attr("src", "./assets/offer2-small.png");
+    $("#carousel-img-3").attr("src", "./assets/offer3-small.png");
+  }
 });
 
 $(".st-cart-button").hover(() => {
@@ -50,6 +55,18 @@ $("#menu-modal").click(() => {
 $("#close-menu").click(() => {
   $("#menu-modal").fadeOut();
   $("#menu").animate({ left: "-300px" });
+});
+
+$(window).resize(() => {
+  if ($(window).width() <= 1000) {
+    $("#carousel-img-1").attr("src", "./assets/offer1-small.png");
+    $("#carousel-img-2").attr("src", "./assets/offer2-small.png");
+    $("#carousel-img-3").attr("src", "./assets/offer3-small.png");
+    return;
+  }
+  $("#carousel-img-1").attr("src", "./assets/offer1.png");
+  $("#carousel-img-2").attr("src", "./assets/offer2.png");
+  $("#carousel-img-3").attr("src", "./assets/offer3.png");
 });
 
 //For reviews, create a way to calculate overall rating using given the ratings of reviews provided on the site
