@@ -307,3 +307,43 @@ a {
   background-color: #c983c9;
   overflow-y: hidden;
 }
+
+.accordion_button {
+  display:block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  background: #ECA779;
+  color: black;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.accordion_button::after {
+  content:'\25be';
+  float: right;
+  transform: scale (1.5);
+}
+
+.accordion_button--active + .accordion_content {
+  display:block;
+}
+
+.accordion_button--active{
+  background:#F4D5C0;
+}
+.accordion_button--active::after {
+  content: '\25b4';
+}
+
+.accordion_content {
+    /* overflow:hidden;
+    max-height: 150px;
+    transition: max-height 0.2s; */
+    padding: 0 15px;
+    background:whitesmoke;
+    display:none;
+    overflow:auto;
+} 
