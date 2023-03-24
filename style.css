@@ -260,28 +260,45 @@ a {
   color: #d8c0d8;
 }
 
-/* #rating {
-  display: inline-flex; FIX - Display inline with previous element 
-} */
+#st-review-title {
+  float: left;
+  padding-right: 20px;
+}
 
-.st-reviews h3 {
+ .filled {
+  display: inline-block;
+  color: #ECA779;
+ }
+ .blank {
+  color: white;
+ }
+
+.st-reviews h6 {
   overflow-x: visible;
 }
 
-.st-reviews h5 {
+.st-reviews h6 {
   overflow-x: visible;
   font-style: italic;
   padding-top: 10px;
 }
 
-.st-reviews p {
-  background-color: lavender;
-  border: 2px solid black;
+.st-reviews-form p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.st-review-form h4 {
-  overflow-x: visible;
+.st-reviews select {
+  display: inline-block;
 }
+
+.st-reviews p {
+  background-color: #EDE8E8;
+  border: 2px solid #595959;
+  border-radius: 5px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   .st-button {
