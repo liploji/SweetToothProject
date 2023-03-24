@@ -13,28 +13,34 @@ $(document).ready(function () {
 });
 
 $(".st-cart-button").hover(() => {
-  $(".cart1").hide();
-  $(".cart2").show();
+  hoverButton("cart");
 });
 
 $(".st-cart-button").mouseleave(() => {
-  $(".cart1").show();
-  $(".cart2").hide();
+  mouseLeaveButton("cart");
 });
+
+$(".st-menu-button").hover(() => {
+  hoverButton("menu");
+});
+
+$(".st-menu-button").mouseleave(() => {
+  mouseLeaveButton("menu");
+});
+
+const hoverButton = (element) => {
+  $("." + element + "1").hide();
+  $("." + element + "2").show();
+};
+
+const mouseLeaveButton = (element) => {
+  $("." + element + "1").show();
+  $("." + element + "2").hide();
+};
 
 $(".st-cart-button").click(() => {
   $("#cart-modal").fadeIn();
   $("#cart").animate({ right: "0px" });
-});
-
-$(".st-menu-button").hover(() => {
-  $(".menu1").hide();
-  $(".menu2").show();
-});
-
-$(".st-menu-button").mouseleave(() => {
-  $(".menu1").show();
-  $(".menu2").hide();
 });
 
 $(".st-menu-button").click(() => {
@@ -48,14 +54,17 @@ $("#cart-modal").click(() => {
 });
 
 $("#menu-modal").click(() => {
-  $("#menu-modal").fadeOut();
-  $("#menu").animate({ left: "-300px" });
+  closeMenu();
 });
 
 $("#close-menu").click(() => {
+  closeMenu();
+});
+
+const closeMenu = () => {
   $("#menu-modal").fadeOut();
   $("#menu").animate({ left: "-300px" });
-});
+};
 
 $(window).resize(() => {
   if ($(window).width() <= 1000) {
