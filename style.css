@@ -314,6 +314,51 @@ a {
   }
 }
 
+.product-card {
+  background-color: #EDE8E8;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 200px;
+  margin: 10px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product-image {
+  width: 100%;
+  height: auto;
+}
+
+.product-name {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.product-price {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.add-to-cart {
+  background-color: #EDE8E8;
+  color: #C983C9;
+  border: 2px solid #C983C9;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+.add-to-cart:hover {
+  background-color: #C983C9;
+  color: #EDE8E8;
+  border: 2px solid #C983C9;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-top: 10px;
+  cursor: pointer;
+}
 .st-copyright {
   color: white;
   padding-top: 5px;
