@@ -62,7 +62,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 5px;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-cart-button {
@@ -72,7 +72,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 50%;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -87,7 +87,7 @@ body {
   border: 1px solid #c983c9;
   border-radius: 50%;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -126,7 +126,8 @@ body {
 }
 
 .st-footer {
-  height: 150px;
+  min-height: 95px;
+  max-height: 140px;
   background-color: #d8c0d8;
   border-top: 5px solid #c983c9;
 }
@@ -135,16 +136,24 @@ body {
   width: 50%;
 }
 
-.st-footer-block-inner {
+.st-footer-block-inner1 {
   padding-top: 10px;
   padding-left: 20px;
   font-size: 14px;
-  font-weight: 600;
+  font-weight: 700;
+}
+.st-footer-block-inner2 {
+  width: 50%;
+  padding-top: 10px;
+  padding-left: 20px;
+  font-size: 14px;
+  font-weight: 700;
 }
 
 .st-divider {
   border-left: 5px solid #c983c9;
-  height: 100%;
+  min-height: 95px;
+  max-height: 140px;
 }
 
 ul {
@@ -159,6 +168,11 @@ ul {
 }
 
 .st-footer-item {
+  margin-bottom: 5px;
+  color: white;
+}
+
+.st-footer-item a {
   margin-bottom: 5px;
   color: white;
 }
@@ -207,6 +221,7 @@ a {
 }
 
 .st-close-button {
+  overflow-x: visible;
   text-align: center;
   margin: 10px 0px 10px 20px;
   border: 1px solid #c983c9;
@@ -228,7 +243,7 @@ a {
   border-top: 2px solid #c983c9;
   border-bottom: 2px solid #c983c9;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-menu-inner-button {
@@ -236,7 +251,7 @@ a {
   padding: 10px 0px;
   border-bottom: 2px solid #c983c9;
   color: #c983c9;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .st-menu-inner-button:hover,
@@ -245,28 +260,45 @@ a {
   color: #d8c0d8;
 }
 
-/* #rating {
-  display: inline-flex; FIX - Display inline with previous element 
-} */
+#st-review-title {
+  float: left;
+  padding-right: 20px;
+}
 
-.reviews h3 {
+ .filled {
+  display: inline-block;
+  color: #ECA779;
+ }
+ .blank {
+  color: white;
+ }
+
+.st-reviews h6 {
   overflow-x: visible;
 }
 
-.reviews h5 {
+.st-reviews h6 {
   overflow-x: visible;
   font-style: italic;
   padding-top: 10px;
 }
 
-.reviews p {
-  background-color: lavender;
-  border: 2px solid black;
+.st-reviews-form p {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
 }
 
-.form h4 {
-  overflow-x: visible;
+.st-reviews select {
+  display: inline-block;
 }
+
+.st-reviews p {
+  background-color: #EDE8E8;
+  border: 2px solid #595959;
+  border-radius: 5px;
+}
+
+
 
 @media only screen and (max-width: 1000px) {
   .st-button {
@@ -327,3 +359,53 @@ a {
   margin-top: 10px;
   cursor: pointer;
 }
+.st-copyright {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 27px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #c983c9;
+  overflow-y: hidden;
+}
+
+.accordion_button {
+  display:block;
+  width: 100%;
+  padding: 15px;
+  border: none;
+  outline: none;
+  cursor:pointer;
+  background: #ECA779;
+  color: black;
+  text-align: left;
+  transition: background 0.2s;
+}
+
+.accordion_button::after {
+  content:'\25be';
+  float: right;
+  transform: scale (1.5);
+}
+
+.accordion_button--active + .accordion_content {
+  display:block;
+}
+
+.accordion_button--active{
+  background:#F4D5C0;
+}
+.accordion_button--active::after {
+  content: '\25b4';
+}
+
+.accordion_content {
+    /* overflow:hidden;
+    max-height: 150px;
+    transition: max-height 0.2s; */
+    padding: 0 15px;
+    background:whitesmoke;
+    display:none;
+    overflow:auto;
+} 
