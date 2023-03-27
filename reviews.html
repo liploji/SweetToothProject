@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sweet Toot | Reviews</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  </head>
+  <body>
+    <div id="cart-modal"></div>
+    <div id="cart">CART</div>
+    <div id="menu-modal"></div>
+    <div id="menu">
+      <div id="close-menu" class="st-close-button">X</div>
+      <a href="./index.html">
+        <div class="st-menu-inner-button-f">Home</div>
+      </a>
+      <a href="./about.html">
+        <div class="st-menu-inner-button">About Us</div>
+      </a>
+      <a href="./contacts.html">
+        <div class="st-menu-inner-button">Contact Us</div>
+      </a>
+      <a href="./faq.html">
+        <div class="st-menu-inner-button">FAQ</div>
+      </a>
+      <a href="./products.html">
+        <div class="st-menu-inner-button">Products</div>
+      </a>
+      <a href="./reviews.html">
+        <div class="st-menu-inner-button">Reviews</div>
+      </a>
+    </div>
+
+    <header class="d-flex row st-header">
+      <div class="d-flex justify-content-center align-items-center st-logo">
+        <a href="index.html"
+          ><img src="./assets/logo.png" alt="Logo" height="114"
+        /></a>
+      </div>
+      <nav
+        id="navbar1"
+        class="d-flex justify-content-evenly align-items-center st-navbar"
+      >
+        <a href="index.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            Home
+          </div></a
+        >
+        <a href="about.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            About Us
+          </div></a
+        >
+        <a href="contacts.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            Contact Us
+          </div></a
+        >
+        <a href="faq.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            FAQ
+          </div></a
+        >
+        <a href="products.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            Products
+          </div></a
+        >
+        <a href="reviews.html" style="text-decoration: none"
+          ><div
+            class="d-flex justify-content-evenly align-items-center st-button"
+          >
+            Reviews
+          </div></a
+        >
+
+        <div
+          class="d-flex justify-content-center align-items-center st-cart-button"
+        >
+          <img
+            class="st-cart-icon cart1"
+            src="./assets/cart-icon-dark.svg"
+            alt="cart icon"
+          />
+          <img
+            class="st-cart-icon cart2"
+            src="./assets/cart-icon-light.svg"
+            alt="cart icon"
+          />
+        </div>
+      </nav>
+      <nav
+        id="navbar2"
+        class="d-flex justify-content-between align-items-center st-navbar"
+      >
+        <div
+          class="d-flex justify-content-center align-items-center st-menu-button"
+        >
+          <img
+            class="st-menu-icon menu1"
+            src="./assets/menu-icon-dark.svg"
+            alt="menu icon"
+          />
+          <img
+            class="st-menu-icon menu2"
+            src="./assets/menu-icon-light.svg"
+            alt="menu icon"
+          />
+        </div>
+        <div
+          class="d-flex justify-content-center align-items-center st-cart-button"
+        >
+          <img
+            class="st-cart-icon cart1"
+            src="./assets/cart-icon-dark.svg"
+            alt="cart icon"
+          />
+          <img
+            class="st-cart-icon cart2"
+            src="./assets/cart-icon-light.svg"
+            alt="cart icon"
+          />
+        </div>
+      </nav>
+    </header>
+
+    <main class="st-main">
+      <div class="st-container">
+        <div class="st-content">
+          <h1 class="st-title">Reviews</h1>
+          <!--Actual content below-->
+          <div class="st-reviews">
+            <h4 id="st-rating">Overall Rating:</h3>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star blank"></span> <!--Rating made of stars, for each review and overall, use bright orange-->
+            
+              <h6>From Customer Name</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+              Velit praesentium consequatur dolores et ratione illo. <br />
+              Deleniti labore magnam quae iste quia ullam distinctio, <br />
+              natus molestias recusandae voluptas a accusamus facere. <br />
+            </p>
+
+            <h6>From Customer Name</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+              Velit praesentium consequatur dolores et ratione illo. <br />
+              Deleniti labore magnam quae iste quia ullam distinctio, <br />
+              natus molestias recusandae voluptas a accusamus facere. <br />
+            </p>
+
+            <h6>Form Customer Name</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+              Velit praesentium consequatur dolores et ratione illo. <br />
+              Deleniti labore magnam quae iste quia ullam distinctio, <br />
+              natus molestias recusandae voluptas a accusamus facere. <br />
+            </p>
+
+            <h6>From Customer Name</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+              Velit praesentium consequatur dolores et ratione illo. <br />
+              Deleniti labore magnam quae iste quia ullam distinctio, <br />
+              natus molestias recusandae voluptas a accusamus facere. <br />
+            </p>
+
+            <h6>From Customer Name</h6>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
+              Velit praesentium consequatur dolores et ratione illo. <br />
+              Deleniti labore magnam quae iste quia ullam distinctio, <br />
+              natus molestias recusandae voluptas a accusamus facere. <br />
+            </p>
+              <h6>
+                If you would like to share your experience with our business,
+                please fill out the form below!
+              </h6>
+            <h6>All feedback is appreciated!</h6>
+            <hr>
+          </div>
+          <div class="st-review-form">
+            <form name="review_form" action="submit.php" method="post">
+              <h3>Review Form:</h3>
+              First name: <input type="text" name="first_name"> <br>
+
+              <p>Which product did you purchase?</p> 
+
+              <label for="product_list">List of products:</label> 
+              <select name="product_type">
+                <optgroup label="Cakes">
+                  <option value="C1"> Chocolate </option>
+                  <option value="C2"> Strawberry Shortcake </option>
+                  <option value="C2"> Red Velvet </option>
+                  <option value="C3"> Strawberry Crispy Shortcake Pie</option>
+                </optgroup>
+
+                <optgroup label="Cupcakes">
+                  <option value="CP1"> Chocolate </option>
+                  <option value="CP2"> Red Velvet </option> 
+                </optgroup> 
+
+                <optgroup label="Cookies">
+                  <option value="Ck1"> Chocolate Chip </option>
+                  <option value="Ck2"> Double Chocolate </option> 
+                  <option value="Ck3"> Oatmeal & Chocolate Chip </option> 
+                </optgroup>    
+              </select> <br>
+              Other (Customized, etc): <input type="text" name="order">
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="d-flex st-footer">
+        <div class="st-footer-block">
+          <div class="st-footer-block-inner1">
+            <div class="st-footer-item">
+              <a href="#instagram"
+                ><img
+                  class="st-footer-icon"
+                  src="./assets/instagram-icon.svg"
+                  alt="instagram icon"
+                />
+                <span>@SweetTooth</span></a
+              >
+            </div>
+            <div class="st-footer-item">
+              <a href="#facebook"
+                ><img
+                  class="st-footer-icon"
+                  src="./assets/facebook-icon.svg"
+                  alt="facebook icon"
+                />
+                <span>SweetTooth</span></a
+              >
+            </div>
+            <div class="st-footer-item">
+              Developed by: Bruno, Katherine, Mikaela and Zeldrix
+            </div>
+          </div>
+        </div>
+        <div class="st-divider"></div>
+        <div class="d-flex st-footer-block">
+          <div class="st-footer-block-inner2">
+            <ul>
+              <li class="st-footer-item"><a href="about.html">About Us</a></li>
+              <li class="st-footer-item">
+                <a href="contacts.html">Contact Us</a>
+              </li>
+              <li class="st-footer-item"><a href="faq.html">FAQ</a></li>
+            </ul>
+          </div>
+          <div class="st-footer-block-inner2">
+            <ul>
+              <li class="st-footer-item">
+                <a href="products.html">Products</a>
+              </li>
+              <li class="st-footer-item"><a href="reviews.html">Reviews</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="st-copyright">
+        <p>&copy 2023 SweetTooth Bakery</p>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>
