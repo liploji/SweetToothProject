@@ -78,7 +78,19 @@ $(window).resize(() => {
   $("#carousel-img-3").attr("src", "./assets/offer3.png");
 });
 
-//For reviews, create a way to calculate overall rating using given the ratings of reviews provided on the site
+//-------------------------------------------------------------------------------------------
+function validateForm() {
+  let fName = document.forms["review-form"]["first"].value;
+  if (fName == "") {
+    alert("Empty field.");
+  }
+  else {
+    alert("Thank you!");
+  }
+
+}
+
+//-------------------------------------------------------------------------------------------
 
 // FAQ PAGE ACCORDION
 document.querySelectorAll('.accordion_button').forEach(button => {

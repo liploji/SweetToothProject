@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family: Roboto, sans-serif;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 html {
@@ -124,7 +124,8 @@ body {
   padding: 50px;
   height: 100%;
 }
-
+/*------------------------------------------------------*/
+/*Footer:*/
 .st-footer {
   min-height: 95px;
   max-height: 140px;
@@ -149,34 +150,39 @@ body {
   font-size: 14px;
   font-weight: 700;
 }
-
 .st-divider {
   border-left: 5px solid #c983c9;
   min-height: 95px;
   max-height: 140px;
 }
-
 ul {
   margin: 0;
   padding: 0;
 }
-
 .st-footer-icon {
   float: left;
   width: 20px;
   margin-right: 10px;
 }
-
 .st-footer-item {
   margin-bottom: 5px;
   color: white;
 }
-
 .st-footer-item a {
   margin-bottom: 5px;
   color: white;
 }
-
+.st-copyright {
+  color: white;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  height: 27px;
+  font-size: 12px;
+  text-align: center;
+  background-color: #c983c9;
+  overflow-y: hidden;
+}
+/*------------------------------------------------------*/
 a {
   text-decoration: none;
 }
@@ -259,12 +265,15 @@ a {
   background-color: #c983c9;
   color: #d8c0d8;
 }
-
+/*------------------------------------------------------*/
+/*Reviews page:*/
 #st-review-title {
   float: left;
   padding-right: 20px;
 }
-
+.st-stars {
+  height: 5%;
+}
  .filled {
   display: inline-block;
   color: #ECA779;
@@ -282,22 +291,26 @@ a {
   font-style: italic;
   padding-top: 10px;
 }
-
-.st-reviews-form p {
-  margin-bottom: 0px;
-  padding-bottom: 0px;
+.form-divider input, select {
+  height: 25px;
+}
+form {
+  padding: 10px 15px 15px 15px;
+  background-color: #F4D5C0;
+  border: 2px solid #ECA779;
+  border-radius: 5px;
 }
 
 .st-reviews select {
   display: inline-block;
 }
 
-.st-reviews p {
+.st-comments {
   background-color: #EDE8E8;
-  border: 2px solid #595959;
+  border: 2px solid white;
   border-radius: 5px;
 }
-
+/*------------------------------------------------------*/
 
 
 @media only screen and (max-width: 1000px) {
@@ -313,7 +326,8 @@ a {
     display: flex !important;
   }
 }
-
+/*------------------------------------------------------*/
+/*Products page:*/
 .product-card {
   background-color: #EDE8E8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -359,17 +373,8 @@ a {
   margin-top: 10px;
   cursor: pointer;
 }
-.st-copyright {
-  color: white;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  height: 27px;
-  font-size: 12px;
-  text-align: center;
-  background-color: #c983c9;
-  overflow-y: hidden;
-}
-
+/*------------------------------------------------------*/
+/*Contact Us page:*/
 .accordion_button {
   display:block;
   width: 100%;
