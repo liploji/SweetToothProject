@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sweet Toot | Reviews</title>
+    <title>Sweet Tooth | Reviews</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -157,19 +157,21 @@
           <!--Actual content below-->
           <div class="st-reviews">
             <h4 id="st-rating">Overall Rating:</h3>
-            <span class="fa fa-star filled"></span>
-            <span class="fa fa-star filled"></span>
-            <span class="fa fa-star filled"></span>
-            <span class="fa fa-star filled"></span>
-            <span class="fa fa-star blank"></span> 
-            
+              <div id="stars">
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star filled"></span>
+              <span class="fa fa-star blank"></span> 
+            </div>
             <div class="st-comments">
               <span>Product: </span> <span id="product_name"> Red Velvet Cupcake</span>
               <p>
                 Best cupcakes one could buy in Toronto! I won't ever be able to
                 go back to regular, store-bought, stale cupcakes. Only tried the 
                 Red Velvet flavour, (got a dozen for my friends and I) but I would
-                defintely recommend Sweet Tooth! -<span id="customer_name">Michelle</span>
+                defintely recommend Sweet Tooth for any dessert cravings! 
+                - <span id="customer_name">Michelle</span>
              </p>
               <span class="fa fa-star filled"></span>
               <span class="fa fa-star filled"></span>
@@ -181,10 +183,10 @@
             <div class="st-comments">
               <span>Product: </span> <span id="product_name"> Strawberry Crispy Shortcake</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                Velit praesentium consequatur dolores et ratione illo. <br />
-                Deleniti labore magnam quae iste quia ullam distinctio, <br />
-                natus molestias recusandae voluptas a accusamus facere. <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Velit praesentium consequatur dolores et ratione illo.
+                Deleniti labore magnam quae iste quia ullam distinctio, 
+                natus molestias recusandae voluptas a accusamus facere. 
                 -<span id="customer_name">Michelle</span>
               </p>
                 <span class="fa fa-star filled"></span>
@@ -197,10 +199,10 @@
             <div class="st-comments">
               <span>Product: </span> <span id="product_name"> Chocolate Chip & Oatmeal Cookie</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                Velit praesentium consequatur dolores et ratione illo. <br />
-                Deleniti labore magnam quae iste quia ullam distinctio, <br />
-                natus molestias recusandae voluptas a accusamus facere. <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Velit praesentium consequatur dolores et ratione illo. 
+                Deleniti labore magnam quae iste quia ullam distinctio, 
+                natus molestias recusandae voluptas a accusamus facere. 
                 -<span id="customer_name">Michelle</span>
               </p>
                 <span class="fa fa-star filled"></span>
@@ -213,10 +215,10 @@
             <div class="st-comments">
               <span>Product: </span> <span id="product_name"> Sugar Cookie</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                Velit praesentium consequatur dolores et ratione illo. <br />
-                Deleniti labore magnam quae iste quia ullam distinctio, <br />
-                natus molestias recusandae voluptas a accusamus facere. <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Velit praesentium consequatur dolores et ratione illo. 
+                Deleniti labore magnam quae iste quia ullam distinctio, 
+                natus molestias recusandae voluptas a accusamus facere. 
                 -<span id="customer_name">Michelle</span>
               </p>
                 <span class="fa fa-star filled"></span>
@@ -229,10 +231,10 @@
             <div class="st-comments">
               <span>Product: </span> <span id="product_name"> Black Forest Cake</span>
               <p>
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br />
-                Velit praesentium consequatur dolores et ratione illo. <br />
-                Deleniti labore magnam quae iste quia ullam distinctio, <br />
-                natus molestias recusandae voluptas a accusamus facere. <br />
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. 
+                Velit praesentium consequatur dolores et ratione illo. 
+                Deleniti labore magnam quae iste quia ullam distinctio, 
+                natus molestias recusandae voluptas a accusamus facere. 
                 -<span id="customer_name">Michelle</span>
               </p>
                 <span class="fa fa-star filled"></span>
@@ -241,13 +243,13 @@
                 <span class="fa fa-star filled"></span>
                 <span class="fa fa-star blank"></span> 
               </div>
-
+              <hr>
               <h6>
                 If you would like to share your experience with our business,
                 please fill out the form below!
               </h6>
             <h6>All feedback is appreciated!</h6>
-            <hr>
+            
           </div>
          
           <form name="review_form" onSubmit="validateForm()">
@@ -261,7 +263,7 @@
               <select name="product_type" reqiured>
                 <optgroup label="Cakes">
                   <option value="C1"> Strawberry Cheesecake </option>
-                  <option value="C2"> Black Forest Cake </option>
+                  <option value="C2"> Black Forest </option>
                   <option value="C3"> Strawberry Crispy Shortcake </option>
                 </optgroup>
                 
@@ -273,15 +275,18 @@
   
                 <optgroup label="Cookies">
                   <option value="Ck1"> Chocolate Chip </option>
-                  <option value="Ck2"> Sugar Cookie </option> 
-                  <option value="Ck3"> Oatmeal & Chocolate Chip Cookie</option> 
+                  <option value="Ck2"> Chocolate Chip & Oatmeal </option> 
+                  <option value="Ck3"> Shortbread </option>
                 </optgroup>    
               </select>
             </div>
             <div class="form-divider">
-              Other (Customized, etc): <input type="text" name="order">
+              Other (i.e. Gluten-free, etc): <input type="text" name="order">
             </div>
-
+            <div class="form-divider">
+              <label for="txtarea">Please provide your comments here:</label><br>
+              <textarea name="" id="" cols="50" rows="10">Your thoughts on the purchase: </textarea>
+            </div>
             <input type="submit" value="Submit">
           </form>
 

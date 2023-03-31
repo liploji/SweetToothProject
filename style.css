@@ -271,9 +271,10 @@ a {
   float: left;
   padding-right: 20px;
 }
-.st-stars {
-  height: 5%;
+.st-reviews #st-rating, #stars  {
+  display: inline;
 }
+
  .filled {
   display: inline-block;
   color: #ECA779;
@@ -285,8 +286,8 @@ a {
   font-weight: normal;
   font-style: italic;
 }
-
 .st-comments {
+  margin-bottom: 15px;
   padding: 5px 5px 5px 5px;
   background-color: #EDE8E8;
   border: 2px solid white;
@@ -301,6 +302,7 @@ a {
 }
 .form-divider input, select {
   height: 25px;
+  margin-bottom: 5px;
 }
 .form-divider-menu select {
   width: 255px;
@@ -310,6 +312,10 @@ form {
   background-color: #F4D5C0;
   border: 2px solid #ECA779;
   border-radius: 5px;
+}
+input, select {
+  background-color: #D8C0D8;
+  border: none;
 }
 
 .st-reviews select {
@@ -334,6 +340,14 @@ form {
 }
 /*------------------------------------------------------*/
 /*Products page:*/
+.st-products {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  
+}
+
 .product-card {
   background-color: #EDE8E8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);

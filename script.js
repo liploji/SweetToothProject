@@ -80,9 +80,10 @@ $(window).resize(() => {
 
 //-------------------------------------------------------------------------------------------
 function validateForm() {
-  let fName = document.forms["review-form"]["first"].value;
+  // let fName = document.forms["review-form"]["first"].value;
+  let fName = document.getElementById("first").value;
   if (fName == "") {
-    alert("Empty field.");
+    alert("Empty field must be filled.");
   }
   else {
     alert("Thank you!");
