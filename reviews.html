@@ -23,7 +23,8 @@
   </head>
   <body>
     <div id="cart-modal"></div>
-    <div id="cart">CART</div>
+    <div id="cart">
+      </div>
     <div id="menu-modal"></div>
     <div id="menu">
       <div id="close-menu" class="st-close-button">X</div>
@@ -255,7 +256,7 @@
           <form name="review_form" onSubmit="validateForm()">
             <h3>Review Form:</h3>
             <div class="form-divider">
-              First name: <input type="text" name="first" reqiured>
+              First name: <input id="first" type="text" name="first" reqiured>
             </div>
 
             <div class="form-divider-menu">
@@ -285,7 +286,7 @@
             </div>
             <div class="form-divider">
               <label for="txtarea">Please provide your comments here:</label><br>
-              <textarea name="" id="" cols="50" rows="10">Your thoughts on the purchase: </textarea>
+              <textarea name="" id="" cols="50" rows="10" placeholder="Your thoughts on the purchase: "></textarea>
             </div>
             <input type="submit" value="Submit">
           </form>
