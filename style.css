@@ -434,3 +434,12 @@ input, select {
     display:none;
     overflow:auto;
 } 
+/*------------------------------------------------------*/
+/*About Us page:*/
+.bold_text {
+  font-weight: bold;
+}
+
+.italic_text {
+  font-style: italic;  
+}
