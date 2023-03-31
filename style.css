@@ -393,6 +393,49 @@ input, select {
   margin-top: 10px;
   cursor: pointer;
 }
+
+.quantity {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.minus-btn, .plus-btn {
+  display: inline-block;
+  background-color: #EDE8E8;
+  color: #C983C9;
+  border: 2px solid #C983C9;
+  border-radius: 5px;
+  width: 30px;
+  height: 30px;
+  font-size: 18px;
+  line-height: 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield; /* sorry using mozilla so have to use this*/
+  margin: 0;
+  color: #555;
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  width: 50px;
+  height: 30px;
+  border: none;
+  border-radius: 0;
+}
+input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+input[type="number"]:focus {
+  outline: none;
+}
 /*------------------------------------------------------*/
 /*Contact Us page:*/
 .accordion_button {
