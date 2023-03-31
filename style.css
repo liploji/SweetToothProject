@@ -281,18 +281,29 @@ a {
  .blank {
   color: white;
  }
-
-.st-reviews h6 {
-  overflow-x: visible;
+#customer_name {
+  font-weight: normal;
+  font-style: italic;
 }
 
-.st-reviews h6 {
-  overflow-x: visible;
-  font-style: italic;
-  padding-top: 10px;
+.st-comments {
+  padding: 5px 5px 5px 5px;
+  background-color: #EDE8E8;
+  border: 2px solid white;
+  border-radius: 5px;
+}
+.st-comments span {
+  font-weight: 900;
+  margin-right: 5px;
+}
+#product_name {
+  font-weight: normal;
 }
 .form-divider input, select {
   height: 25px;
+}
+.form-divider-menu select {
+  width: 220px;
 }
 form {
   padding: 10px 15px 15px 15px;
@@ -305,11 +316,6 @@ form {
   display: inline-block;
 }
 
-.st-comments {
-  background-color: #EDE8E8;
-  border: 2px solid white;
-  border-radius: 5px;
-}
 /*------------------------------------------------------*/
 
 
