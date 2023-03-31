@@ -345,7 +345,6 @@ input, select {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  
 }
 
 .product-card {
@@ -358,6 +357,7 @@ input, select {
   display: flex;
   flex-direction: column;
   align-items: center;
+  text-align: center;
 }
 
 .product-image {
