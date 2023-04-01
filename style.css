@@ -307,7 +307,7 @@ select {
   margin-bottom: 5px;
 }
 .form-divider-menu select {
-  width: 255px;
+  width: 220px;
 }
 form {
   padding: 10px 15px 15px 15px;
@@ -315,8 +315,7 @@ form {
   border: 2px solid #eca779;
   border-radius: 5px;
 }
-input,
-select {
+input, select {
   background-color: #d8c0d8;
   border: none;
 }
@@ -325,6 +324,20 @@ select {
   display: inline-block;
 }
 
+#submitForm {
+  background-color: #ede8e8;
+  color: #c983c9;
+  border: 2px solid #c983c9;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
+
+#submitForm:hover {
+  background-color: #c983c9;
+  color: #ede8e8;
+  border: 2px solid #c983c9;
+  /* cursor: pointer; */
+}
 /*------------------------------------------------------*/
 
 @media only screen and (max-width: 1000px) {

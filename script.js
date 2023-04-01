@@ -94,9 +94,9 @@ function validateForm() {
   // let fName = document.forms["review-form"]["first"].value;
   let fName = document.getElementById("first").value;
   if (fName == "") {
-    alert("Empty field must be filled.");
+    alert("First name must be provided.");
   } else {
-    alert("Thank you!");
+    alert("Thank you for your input!");
   }
 }
 
