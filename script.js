@@ -132,7 +132,6 @@ $(window).resize(() => {
 
 // VALIDATE REVIEWS FORM
 function validateForm() {
-  // let fName = document.forms["review-form"]["first"].value;
   let fName = document.getElementById("first").value;
   if (fName == "") {
     alert("First name must be provided.");
