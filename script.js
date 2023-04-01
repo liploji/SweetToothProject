@@ -1,3 +1,30 @@
+//-------------------------------------------------------------------------------------------
+
+// ARRAY OF PRODUCTS
+const products = [
+  {
+    id: 1,
+    name: "Strawberry Cripsy Shortcake",
+    price: 99.99,
+    quantity: 0,
+  },
+  {
+    id: 2,
+    name: "Black Forest Cake",
+    price: 99.99,
+    quantity: 0,
+  },
+  {
+    id: 3,
+    name: "Strawberry Cheesecake",
+    price: 99.99,
+    quantity: 0,
+  },
+];
+
+//-------------------------------------------------------------------------------------------
+
+// SETUP PAGE
 $(document).ready(function () {
   $(".cart1").show();
   $(".cart2").hide();
@@ -12,6 +39,9 @@ $(document).ready(function () {
   }
 });
 
+//-------------------------------------------------------------------------------------------
+
+// CART AND MENU BUTTON EFFECTS
 $(".st-cart-button").hover(() => {
   hoverButton("cart");
 });
@@ -38,6 +68,9 @@ const mouseLeaveButton = (element) => {
   $("." + element + "2").hide();
 };
 
+//-------------------------------------------------------------------------------------------
+
+// OPEN MENU AND CART
 $(".st-cart-button").click(() => {
   $("#cart-modal").fadeIn();
   $("#cart").animate({ right: "0px" });
@@ -55,6 +88,9 @@ $(".st-menu-button").click(() => {
   $("#menu").animate({ left: "0px" });
 });
 
+//-------------------------------------------------------------------------------------------
+
+// CLOSE MENU AND CART
 $("#cart-modal").click(() => {
   closeCart();
 });
@@ -77,6 +113,9 @@ const closeCart = () => {
   $("#cart").animate({ right: "-300px" });
 };
 
+//-------------------------------------------------------------------------------------------
+
+// RESIZE CAROUSEL IMAGES
 $(window).resize(() => {
   if ($(window).width() <= 1000) {
     $("#carousel-img-1").attr("src", "./assets/offer1-small.png");
@@ -90,6 +129,8 @@ $(window).resize(() => {
 });
 
 //-------------------------------------------------------------------------------------------
+
+// VALIDATE REVIEWS FORM
 function validateForm() {
   // let fName = document.forms["review-form"]["first"].value;
   let fName = document.getElementById("first").value;
@@ -117,27 +158,9 @@ document.querySelectorAll(".accordion_button").forEach((button) => {
   });
 });
 
-const products = [
-  {
-    id: 1,
-    name: "Strawberry Cripsy Shortcake",
-    price: 99.99,
-    quantity: 0,
-  },
-  {
-    id: 2,
-    name: "Black Forest Cake",
-    price: 99.99,
-    quantity: 0,
-  },
-  {
-    id: 3,
-    name: "Strawberry Cheesecake",
-    price: 99.99,
-    quantity: 0,
-  },
-];
+//-------------------------------------------------------------------------------------------
 
+// CART ADD AND REMOVE PRODUCT
 let cart = [];
 
 function add(id, quantity) {
