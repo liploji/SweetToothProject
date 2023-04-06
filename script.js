@@ -191,8 +191,9 @@ plusBtns.forEach(function(plusBtn) {
     const inputEl = this.parentNode.querySelector(".quantity-input");
     // Get the current value of the input element
     let inputValue = parseInt(inputEl.value);
+    // Check if the value is less than 10
     if (inputValue<10){
-      // Increase the value by 1
+      // Increase the value by 1 if less than 10
       inputValue++;
       // Set the new value of the input element
       inputEl.value = inputValue;
@@ -200,18 +201,19 @@ plusBtns.forEach(function(plusBtn) {
   });
 });
 
-// Get all the plus buttons
+// Get all the minus buttons
 const minusBtns = document.querySelectorAll(".minus-btn");
 
-// Loop through each plus button and add an event listener
+// Loop through each mius button and add an event listener
 minusBtns.forEach(function(minusBtn) {
   minusBtn.addEventListener("click", function() {
     // Get the input element
     const inputEl = this.parentNode.querySelector(".quantity-input");
     // Get the current value of the input element
     let inputValue = parseInt(inputEl.value);
+    // Check if the value is greater than 1
     if (inputValue>1){
-      // Increase the value by 1
+      // Decrease the value by 1 if the value is greater than 1
       inputValue--;
       // Set the new value of the input element
       inputEl.value = inputValue;
