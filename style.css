@@ -3,7 +3,7 @@
   padding: 0;
   box-sizing: border-box;
   overflow-x: hidden;
-  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 html {
@@ -205,7 +205,7 @@ a {
   z-index: 3;
   width: 300px;
   height: 100%;
-  background-color: white;
+  background-color: #d8c0d8;
   right: -300px;
 }
 
@@ -271,17 +271,18 @@ a {
   float: left;
   padding-right: 20px;
 }
-.st-reviews #st-rating, #stars  {
+.st-reviews #st-rating,
+#stars {
   display: inline;
 }
 
- .filled {
+.filled {
   display: inline-block;
-  color: #ECA779;
- }
- .blank {
+  color: #eca779;
+}
+.blank {
   color: white;
- }
+}
 #customer_name {
   font-weight: normal;
   font-style: italic;
@@ -289,7 +290,7 @@ a {
 .st-comments {
   margin-bottom: 15px;
   padding: 5px 5px 5px 5px;
-  background-color: #EDE8E8;
+  background-color: #ede8e8;
   border: 2px solid white;
   border-radius: 5px;
 }
@@ -300,21 +301,22 @@ a {
 #product_name {
   font-weight: normal;
 }
-.form-divider input, select {
+.form-divider input,
+select {
   height: 25px;
   margin-bottom: 5px;
 }
 .form-divider-menu select {
-  width: 255px;
+  width: 220px;
 }
 form {
   padding: 10px 15px 15px 15px;
-  background-color: #F4D5C0;
-  border: 2px solid #ECA779;
+  background-color: #f4d5c0;
+  border: 2px solid #eca779;
   border-radius: 5px;
 }
 input, select {
-  background-color: #D8C0D8;
+  background-color: #d8c0d8;
   border: none;
 }
 
@@ -322,8 +324,21 @@ input, select {
   display: inline-block;
 }
 
-/*------------------------------------------------------*/
+#submitForm {
+  background-color: #ede8e8;
+  color: #c983c9;
+  border: 2px solid #c983c9;
+  border-radius: 5px;
+  padding: 10px 20px;
+}
 
+#submitForm:hover {
+  background-color: #c983c9;
+  color: #ede8e8;
+  border: 2px solid #c983c9;
+  /* cursor: pointer; */
+}
+/*------------------------------------------------------*/
 
 @media only screen and (max-width: 1000px) {
   .st-button {
@@ -348,7 +363,7 @@ input, select {
 }
 
 .product-card {
-  background-color: #EDE8E8;
+  background-color: #ede8e8;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   border-radius: 5px;
   width: 200px;
@@ -376,18 +391,18 @@ input, select {
 }
 
 .add-to-cart {
-  background-color: #EDE8E8;
-  color: #C983C9;
-  border: 2px solid #C983C9;
+  background-color: #ede8e8;
+  color: #c983c9;
+  border: 2px solid #c983c9;
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 10px;
 }
 
 .add-to-cart:hover {
-  background-color: #C983C9;
-  color: #EDE8E8;
-  border: 2px solid #C983C9;
+  background-color: #c983c9;
+  color: #ede8e8;
+  border: 2px solid #c983c9;
   border-radius: 5px;
   padding: 10px 20px;
   margin-top: 10px;
@@ -401,11 +416,12 @@ input, select {
   margin-top: 10px;
 }
 
-.minus-btn, .plus-btn {
+.minus-btn,
+.plus-btn {
   display: inline-block;
-  background-color: #EDE8E8;
-  color: #C983C9;
-  border: 2px solid #C983C9;
+  background-color: #ede8e8;
+  color: #c983c9;
+  border: 2px solid #c983c9;
   border-radius: 5px;
   width: 30px;
   height: 30px;
@@ -428,10 +444,10 @@ input[type="number"] {
   border-radius: 0;
 }
 input::-webkit-outer-spin-button,
-      input::-webkit-inner-spin-button {
-        -webkit-appearance: none;
-        margin: 0;
-      }
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
 
 input[type="number"]:focus {
   outline: none;
@@ -439,44 +455,44 @@ input[type="number"]:focus {
 /*------------------------------------------------------*/
 /*Contact Us page:*/
 .accordion_button {
-  display:block;
+  display: block;
   width: 100%;
   padding: 15px;
   border: none;
   outline: none;
-  cursor:pointer;
-  background: #ECA779;
+  cursor: pointer;
+  background: #eca779;
   color: black;
   text-align: left;
   transition: background 0.2s;
 }
 
 .accordion_button::after {
-  content:'\25be';
+  content: "\25be";
   float: right;
   transform: scale (1.5);
 }
 
 .accordion_button--active + .accordion_content {
-  display:block;
+  display: block;
 }
 
-.accordion_button--active{
-  background:#F4D5C0;
+.accordion_button--active {
+  background: #f4d5c0;
 }
 .accordion_button--active::after {
-  content: '\25b4';
+  content: "\25b4";
 }
 
 .accordion_content {
-    /* overflow:hidden;
+  /* overflow:hidden;
     max-height: 150px;
     transition: max-height 0.2s; */
-    padding: 0 15px;
-    background:whitesmoke;
-    display:none;
-    overflow:auto;
-} 
+  padding: 0 15px;
+  background: whitesmoke;
+  display: none;
+  overflow: auto;
+}
 /*------------------------------------------------------*/
 /*About Us page:*/
 .bold_text {
@@ -484,5 +500,5 @@ input[type="number"]:focus {
 }
 
 .italic_text {
-  font-style: italic;  
+  font-style: italic;
 }
