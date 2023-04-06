@@ -107,3 +107,22 @@ document.querySelectorAll('.accordion_button').forEach(button => {
     }
   });
 });
+
+//Products Page
+const minusBtn = document.querySelector('.minus-btn');
+const plusBtn = document.querySelector('.plus-btn');
+const inputField = document.querySelector('.quantity-input');
+
+minusBtn.addEventListener('click', function() {
+  const currentValue = parseInt(inputField.value);
+  if (currentValue > 1) {
+    inputField.value = currentValue - 1;
+  }
+});
+
+plusBtn.addEventListener('click', function() {
+  const currentValue = parseInt(inputField.value);
+  if (currentValue < 10) {
+    inputField.value = currentValue + 1;
+  }
+});
