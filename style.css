@@ -315,7 +315,8 @@ form {
   border: 2px solid #eca779;
   border-radius: 5px;
 }
-input, select {
+input,
+select {
   background-color: #d8c0d8;
   border: none;
 }
@@ -501,4 +502,90 @@ input[type="number"]:focus {
 
 .italic_text {
   font-style: italic;
+}
+
+.st-cart-card {
+  width: 90%;
+  height: 90px;
+  padding: 5px;
+  border: 1px solid #c983c9;
+  border-radius: 5px;
+  color: #c983c9;
+  margin-left: 15px;
+  margin-bottom: 10px;
+  display: flex;
+}
+
+.st-card-sec1 {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.st-card-sec2 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 25%;
+}
+
+.st-card-item-subtotal {
+  font-size: 16px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.st-card-name {
+  font-size: 18px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.st-card-quantity {
+  margin: 0;
+}
+
+.st-delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #c983c9;
+  width: 20px;
+  height: 20px;
+  overflow: hidden;
+  margin-right: 5px;
+  border-radius: 100%;
+  cursor: pointer;
+}
+
+#st-cart-total {
+  border-top: 2px solid #c983c9;
+
+  border-bottom: 2px solid #c983c9;
+  padding: 10px;
+  font-size: 24px;
+  color: #c983c9;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+
+#st-checkout-button {
+  background-color: #d8c0d8;
+  color: #c983c9;
+  border: 1px solid #c983c9;
+  width: 80%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 5px 0px;
+  font-size: 18px;
+}
+
+#st-checkout-button:hover {
+  background-color: #c983c9;
+  color: #d8c0d8;
 }

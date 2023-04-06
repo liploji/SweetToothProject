@@ -16,7 +16,9 @@
   </head>
   <body>
     <div id="cart-modal"></div>
-    <div id="cart"></div>
+    <div id="cart">
+      <div onclick="closeCart()" class="st-close-button">X</div>
+    </div>
     <div id="menu-modal"></div>
     <div id="menu">
       <div id="close-menu" class="st-close-button">X</div>
@@ -147,7 +149,6 @@
       <div class="st-container">
         <div class="st-content">
           <h1 class="st-title">Our Products</h1>
-          <!-- <h1>Our Products</h1> -->
           <div class="st-products">
             <div class="product-card">
               <img
@@ -159,11 +160,18 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product1-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="add(1, 5)">
+              <button class="add-to-cart" onclick="add(1, 'product1-quantity')">
                 Add to Cart
               </button>
             </div>
@@ -180,11 +188,18 @@
               </p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product2-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="add(2, 5)">
+              <button class="add-to-cart" onclick="add(2, 'product2-quantity')">
                 Add to Cart
               </button>
             </div>
@@ -199,11 +214,18 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product3-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="add(3, 5)">
+              <button class="add-to-cart" onclick="add(3, 'product3-quantity')">
                 Add to Cart
               </button>
             </div>
@@ -220,11 +242,20 @@
               </p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product4-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(4, 'product4-quantity')">
+                Add to Cart
+              </button>
             </div>
 
             <div class="product-card">
@@ -237,11 +268,20 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product5-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(5, 'product5-quantity')">
+                Add to Cart
+              </button>
             </div>
 
             <div class="product-card">
@@ -254,11 +294,20 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product6-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(6, 'product6-quantity')">
+                Add to Cart
+              </button>
             </div>
 
             <div class="product-card">
@@ -271,11 +320,20 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product7-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(7, 'product7-quantity')">
+                Add to Cart
+              </button>
             </div>
 
             <div class="product-card">
@@ -288,11 +346,20 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product8-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(8, 'product8-quantity')">
+                Add to Cart
+              </button>
             </div>
 
             <div class="product-card">
@@ -305,28 +372,20 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product9-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart">Add to Cart</button>
-            </div>
-
-            <div class="product-card">
-              <img
-                src="/assets/chocolateChipCookie.jpg"
-                alt="Chocolate Chip Cookie"
-                class="product-image"
-              />
-              <h3 class="product-name">Chocolate Chip Cookie</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
-              <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
-              </div>
-              <button class="add-to-cart">Add to Cart</button>
+              <button class="add-to-cart" onclick="add(9, 'product9-quantity')">
+                Add to Cart
+              </button>
             </div>
           </div>
         </div>
