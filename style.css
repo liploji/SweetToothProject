@@ -365,7 +365,7 @@ select {
 
 .product-card {
   background-color: #ede8e8;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.102);
   border-radius: 5px;
   width: 200px;
   margin: 10px;
@@ -377,7 +377,7 @@ select {
 }
 
 .product-image {
-  width: 100%;
+  width: 60%;
   height: auto;
 }
 
@@ -389,8 +389,14 @@ select {
 .product-price {
   font-size: 16px;
   font-weight: bold;
+  
 }
-
+.description {
+  background-color:  #d4cfcf;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+}
 .add-to-cart {
   background-color: #ede8e8;
   color: #c983c9;
