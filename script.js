@@ -181,20 +181,40 @@ function remove(id) {
 
 
 //Products Page
-const minusBtn = document.querySelector('.minus-btn');
-const plusBtn = document.querySelector('.plus-btn');
-const inputField = document.querySelector('.quantity-input');
+// Get all the plus buttons
+const plusBtns = document.querySelectorAll(".plus-btn");
 
-minusBtn.addEventListener('click', function() {
-  const currentValue = parseInt(inputField.value);
-  if (currentValue > 1) {
-    inputField.value = currentValue - 1;
-  }
+// Loop through each plus button and add an event listener
+plusBtns.forEach(function(plusBtn) {
+  plusBtn.addEventListener("click", function() {
+    // Get the input element
+    const inputEl = this.parentNode.querySelector(".quantity-input");
+    // Get the current value of the input element
+    let inputValue = parseInt(inputEl.value);
+    if (inputValue<10){
+      // Increase the value by 1
+      inputValue++;
+      // Set the new value of the input element
+      inputEl.value = inputValue;
+    }
+  });
 });
 
-plusBtn.addEventListener('click', function() {
-  const currentValue = parseInt(inputField.value);
-  if (currentValue < 10) {
-    inputField.value = currentValue + 1;
-  }
+// Get all the plus buttons
+const minusBtns = document.querySelectorAll(".minus-btn");
+
+// Loop through each plus button and add an event listener
+minusBtns.forEach(function(minusBtn) {
+  minusBtn.addEventListener("click", function() {
+    // Get the input element
+    const inputEl = this.parentNode.querySelector(".quantity-input");
+    // Get the current value of the input element
+    let inputValue = parseInt(inputEl.value);
+    if (inputValue>1){
+      // Increase the value by 1
+      inputValue--;
+      // Set the new value of the input element
+      inputEl.value = inputValue;
+    }
+  });
 });
