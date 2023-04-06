@@ -1,25 +1,61 @@
 //-------------------------------------------------------------------------------------------
-
 // ARRAY OF PRODUCTS
 const products = [
   {
     id: 1,
     name: "Strawberry Cripsy Shortcake",
-    price: 99.99,
+    price: 28.00,
     quantity: 0,
   },
   {
     id: 2,
     name: "Black Forest Cake",
-    price: 99.99,
+    price: 26.00,
     quantity: 0,
   },
   {
     id: 3,
     name: "Strawberry Cheesecake",
-    price: 99.99,
+    price: 24.00,
     quantity: 0,
   },
+  {
+    id: 4,
+    name: "Chocolate and Vanilla Cupcake",
+    price: 5.00,
+    quantity: 0,
+  },
+  {
+    id: 5,
+    name: "Double Chocolate Cupcake",
+    price: 5.00,
+    quantity: 0,
+  },
+  {
+    id: 6,
+    name: "Red Velvet Cupcake",
+    price: 5.00,
+    quantity: 0,
+  },
+  {
+    id: 7,
+    name: "Shortbread Cookie",
+    price: 6.00,
+    quantity: 0,
+  },
+  {
+    id: 8,
+    name: "Chocolate Chip Oatmeal Cookie",
+    price: 5.00,
+    quantity: 0,
+  },
+  {
+    id: 9,
+    name: "Chocoalte Chip Cookie",
+    price: 5.00,
+    quantity: 0,
+  }
+
 ];
 
 //-------------------------------------------------------------------------------------------
@@ -79,7 +115,7 @@ $(".st-cart-button").click(() => {
     '<div onclick="closeCart()" class="st-close-button">X</div>'
   );
   cart.forEach((product) => {
-    $("#cart").append("<div>" + product.name + "</div>");
+    $("#cart").append("<div>" + product.name + product.quantity + "</div>");
   });
 });
 
@@ -163,18 +199,26 @@ document.querySelectorAll(".accordion_button").forEach((button) => {
 let cart = [];
 
 function add(id, quantity) {
-  let filteredProduct = products.filter((product) => product.id == id);
+  let filteredProduct = products.filter((product) => product.id == id); //making a new array that contains
   let filteredCart = cart.filter((product) => product.id == id);
   if (filteredCart.length > 0) {
     filteredCart[0].quantity += quantity;
     cart = cart.filter((product) => product.id != id);
     cart.push(filteredCart[0]);
+
+    alert(filteredProduct[0].name + " added to cart!"); //To notify the user that they added something to their cart
+
   } else {
     filteredProduct[0].quantity += quantity;
     cart.push(filteredProduct[0]);
+
+    alert(filteredProduct[0].name + " added to cart!"); //To notify the user that they added something to their cart
   }
 }
 
 function remove(id) {
-  cart = cart.filter((product) => product.id != id);
-}
+  let filteredCart = cart.filter((product) => product.id == id);
+  alert(filteredCart[0].name + " removed to cart!"); //To notify the user that they removed something to their cart
+  cart = cart.filter((product) => product.id != id); 
+ }
+//--------------------------------------------------------------------------------------------
