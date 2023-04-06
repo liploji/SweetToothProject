@@ -1,3 +1,6 @@
+// CART VARIABLE
+let cart = [];
+
 //-------------------------------------------------------------------------------------------
 
 // ARRAY OF PRODUCTS
@@ -72,21 +75,30 @@ const mouseLeaveButton = (element) => {
 
 // OPEN MENU AND CART
 $(".st-cart-button").click(() => {
+  openCart();
+});
+
+$(".st-menu-button").click(() => {
+  openMenu();
+});
+
+const openMenu = () => {
+  $("#menu-modal").fadeIn();
+  $("#menu").animate({ left: "0px" });
+};
+
+const openCart = () => {
   $("#cart-modal").fadeIn();
   $("#cart").animate({ right: "0px" });
   $("#cart").empty();
   $("#cart").append(
     '<div onclick="closeCart()" class="st-close-button">X</div>'
   );
+  let cart = JSON.parse(localStorage.getItem("cart"));
   cart.forEach((product) => {
     $("#cart").append("<div>" + product.name + "</div>");
   });
-});
-
-$(".st-menu-button").click(() => {
-  $("#menu-modal").fadeIn();
-  $("#menu").animate({ left: "0px" });
-});
+};
 
 //-------------------------------------------------------------------------------------------
 
@@ -160,21 +172,26 @@ document.querySelectorAll(".accordion_button").forEach((button) => {
 //-------------------------------------------------------------------------------------------
 
 // CART ADD AND REMOVE PRODUCT
-let cart = [];
 
 function add(id, quantity) {
   let filteredProduct = products.filter((product) => product.id == id);
+  let cart = JSON.parse(localStorage.getItem("cart"));
   let filteredCart = cart.filter((product) => product.id == id);
   if (filteredCart.length > 0) {
     filteredCart[0].quantity += quantity;
     cart = cart.filter((product) => product.id != id);
     cart.push(filteredCart[0]);
+    localStorage.setItem("cart", JSON.stringify(cart));
   } else {
     filteredProduct[0].quantity += quantity;
     cart.push(filteredProduct[0]);
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
+  openCart();
 }
 
 function remove(id) {
+  let cart = JSON.parse(localStorage.getItem("cart"));
   cart = cart.filter((product) => product.id != id);
+  localStorage.setItem("cart", JSON.stringify(cart));
 }
