@@ -1,61 +1,28 @@
+// CART VARIABLE
+let cart = [];
+
 //-------------------------------------------------------------------------------------------
+
 // ARRAY OF PRODUCTS
 const products = [
   {
     id: 1,
     name: "Strawberry Cripsy Shortcake",
-    price: 28.00,
+    price: 99.99,
     quantity: 0,
   },
   {
     id: 2,
     name: "Black Forest Cake",
-    price: 26.00,
+    price: 99.99,
     quantity: 0,
   },
   {
     id: 3,
     name: "Strawberry Cheesecake",
-    price: 24.00,
+    price: 99.99,
     quantity: 0,
   },
-  {
-    id: 4,
-    name: "Chocolate and Vanilla Cupcake",
-    price: 5.00,
-    quantity: 0,
-  },
-  {
-    id: 5,
-    name: "Double Chocolate Cupcake",
-    price: 5.00,
-    quantity: 0,
-  },
-  {
-    id: 6,
-    name: "Red Velvet Cupcake",
-    price: 5.00,
-    quantity: 0,
-  },
-  {
-    id: 7,
-    name: "Shortbread Cookie",
-    price: 6.00,
-    quantity: 0,
-  },
-  {
-    id: 8,
-    name: "Chocolate Chip Oatmeal Cookie",
-    price: 5.00,
-    quantity: 0,
-  },
-  {
-    id: 9,
-    name: "Chocoalte Chip Cookie",
-    price: 5.00,
-    quantity: 0,
-  }
-
 ];
 
 //-------------------------------------------------------------------------------------------
@@ -108,21 +75,30 @@ const mouseLeaveButton = (element) => {
 
 // OPEN MENU AND CART
 $(".st-cart-button").click(() => {
+  openCart();
+});
+
+$(".st-menu-button").click(() => {
+  openMenu();
+});
+
+const openMenu = () => {
+  $("#menu-modal").fadeIn();
+  $("#menu").animate({ left: "0px" });
+};
+
+const openCart = () => {
   $("#cart-modal").fadeIn();
   $("#cart").animate({ right: "0px" });
   $("#cart").empty();
   $("#cart").append(
     '<div onclick="closeCart()" class="st-close-button">X</div>'
   );
+  let cart = JSON.parse(localStorage.getItem("cart"));
   cart.forEach((product) => {
-    $("#cart").append("<div>" + product.name + product.quantity + "</div>");
+    $("#cart").append("<div>" + product.name + "</div>");
   });
-});
-
-$(".st-menu-button").click(() => {
-  $("#menu-modal").fadeIn();
-  $("#menu").animate({ left: "0px" });
-});
+};
 
 //-------------------------------------------------------------------------------------------
 
@@ -196,29 +172,68 @@ document.querySelectorAll(".accordion_button").forEach((button) => {
 //-------------------------------------------------------------------------------------------
 
 // CART ADD AND REMOVE PRODUCT
-let cart = [];
 
 function add(id, quantity) {
-  let filteredProduct = products.filter((product) => product.id == id); //making a new array that contains
+  let filteredProduct = products.filter((product) => product.id == id);
+  let cart = JSON.parse(localStorage.getItem("cart"));
   let filteredCart = cart.filter((product) => product.id == id);
   if (filteredCart.length > 0) {
     filteredCart[0].quantity += quantity;
     cart = cart.filter((product) => product.id != id);
     cart.push(filteredCart[0]);
-
-    alert(filteredProduct[0].name + " added to cart!"); //To notify the user that they added something to their cart
-
+    localStorage.setItem("cart", JSON.stringify(cart));
   } else {
     filteredProduct[0].quantity += quantity;
     cart.push(filteredProduct[0]);
-
-    alert(filteredProduct[0].name + " added to cart!"); //To notify the user that they added something to their cart
+    localStorage.setItem("cart", JSON.stringify(cart));
   }
+  openCart();
 }
 
 function remove(id) {
-  let filteredCart = cart.filter((product) => product.id == id);
-  alert(filteredCart[0].name + " removed to cart!"); //To notify the user that they removed something to their cart
-  cart = cart.filter((product) => product.id != id); 
- }
-//--------------------------------------------------------------------------------------------
+  let cart = JSON.parse(localStorage.getItem("cart"));
+  cart = cart.filter((product) => product.id != id);
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+
+//Products Page
+// Get all the plus buttons
+const plusBtns = document.querySelectorAll(".plus-btn");
+
+// Loop through each plus button and add an event listener
+plusBtns.forEach(function(plusBtn) {
+  plusBtn.addEventListener("click", function() {
+    // Get the input element
+    const inputEl = this.parentNode.querySelector(".quantity-input");
+    // Get the current value of the input element
+    let inputValue = parseInt(inputEl.value);
+    // Check if the value is less than 10
+    if (inputValue<10){
+      // Increase the value by 1 if less than 10
+      inputValue++;
+      // Set the new value of the input element
+      inputEl.value = inputValue;
+    }
+  });
+});
+
+// Get all the minus buttons
+const minusBtns = document.querySelectorAll(".minus-btn");
+
+// Loop through each mius button and add an event listener
+minusBtns.forEach(function(minusBtn) {
+  minusBtn.addEventListener("click", function() {
+    // Get the input element
+    const inputEl = this.parentNode.querySelector(".quantity-input");
+    // Get the current value of the input element
+    let inputValue = parseInt(inputEl.value);
+    // Check if the value is greater than 1
+    if (inputValue>1){
+      // Decrease the value by 1 if the value is greater than 1
+      inputValue--;
+      // Set the new value of the input element
+      inputEl.value = inputValue;
+    }
+  });
+});
