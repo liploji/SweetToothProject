@@ -377,7 +377,7 @@ input, select {
 
 .product-image {
   width: 60%;
-  /* height: auto; */
+  height: auto;
 }
 
 .product-name {
@@ -388,8 +388,14 @@ input, select {
 .product-price {
   font-size: 16px;
   font-weight: bold;
+  
 }
-
+.description {
+  background-color:  #d4cfcf;
+  border-radius: 5px;
+  margin: 2px;
+  padding: 5px;
+}
 .add-to-cart {
   background-color: #ede8e8;
   color: #c983c9;
