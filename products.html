@@ -147,7 +147,6 @@
       <div class="st-container">
         <div class="st-content">
           <h1 class="st-title">Our Products</h1>
-          <!-- <h1>Our Products</h1> -->
           <div class="st-products">
             <div class="product-card">
               <img
@@ -156,14 +155,24 @@
                 class="product-image"
               />
               <h3 class="product-name">Strawberry Cripsy Shortcake</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
+              <p class="description">
+                Vanilla cake with cream and caremel filling, covered with
+                peanuts, whole strawberries and more caramel.
+              </p>
+              <p class="product-price">$28.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product1-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(1, 'product1-quantity')">
                 Add to Cart
               </button>
             </div>
@@ -176,119 +185,171 @@
               />
               <h3 class="product-name">Black Forest Cake</h3>
               <p class="description">
-                whipped-cream-crumb-coating-cherries-topn
+                Chocolate cake with a whipped cream crumb coating, topped with
+                cherries.
               </p>
-              <p class="product-price">$99.00</p>
+              <p class="product-price">$26.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product2-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(2, 'product2-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/strawberryCheesecake.jpg"
+                src="/assets/strawberryCheesecake1.jpg"
                 alt="Strawberry Cheesecake"
                 class="product-image"
               />
               <h3 class="product-name">Strawberry Cheesecake</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
+              <p class="description">
+                Lovely cheesecake topped with whole strawberries and strawberry
+                jam.
+              </p>
+              <p class="product-price">$24.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product3-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(3, 'product3-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/chocolateVanillaCupcake.jpg"
-                alt="Chocolate and Vanilla Cupcake"
+                src="/assets/testing.png"
+                alt="Chocolate Vanilla Cupcake"
                 class="product-image"
               />
-              <h3 class="product-name" name="Chocolate and Vanilla Cupcake">Chocolate and Vanilla Cupcake</h3>
+              <h3 class="product-name">Chocolate Vanilla Cupcake</h3>
               <p class="description">
-                Chocolate cupcake with vanilla buttercream icing
+                Chocolate cupcake with vanilla buttercream icing.
               </p>
-              <p class="product-price">$99.00</p>
+              <p class="product-price">$5.00 per pack of six</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product4-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(4, 'product4-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/dbChocolateCupcake.jpg"
-                alt="Double Chocolate Cupcakes"
+                src="/assets/dbChocolateCupcake1.jpg"
+                alt="Double Chocolate Cupcake"
                 class="product-image"
               />
               <h3 class="product-name">Double Chocolate Cupcake</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
+              <p class="description">
+                Chocolate cupcake with chocolate icing and sprinkles.
+              </p>
+              <p class="product-price">$5.00 per pack of six</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product5-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(5, 'product5-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/redVelvetCupcake.jpg"
+                src="/assets/redVelvetCupcake1.jpg"
                 alt="Red Velvet Cupcake"
                 class="product-image"
               />
               <h3 class="product-name">Red Velvet Cupcake</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
+              <p class="description">
+                Red velvet cupcake with homemade cream cheese icing.
+              </p>
+              <p class="product-price">$5.00 per pack of six</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product6-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(6, 'product6-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/shortbreadCookies.jpg"
+                src="/assets/shortbreadCookies1.jpg"
                 alt="Shortbread Cookie"
                 class="product-image"
               />
               <h3 class="product-name">Shortbread Cookie</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
+              <p class="description">
+                Traditional salty-sweet cookies with sprinkled sugar on top.
+              </p>
+              <p class="product-price">$6.00 per pack of six</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product7-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(7, 'product7-quantity')">
                 Add to Cart
               </button>
             </div>
 
             <div class="product-card">
               <img
-                src="/assets/oatmealChocolateChipCookie.jpg"
+                src="/assets/oatmealChocolateChipCookie1.jpg"
                 alt="Chocolate Chip Oatmeal Cookie"
                 class="product-image"
               />
@@ -296,11 +357,18 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product8-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(8, 'product8-quantity')">
                 Add to Cart
               </button>
             </div>
@@ -315,30 +383,18 @@
               <p class="description">Description</p>
               <p class="product-price">$99.00</p>
               <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
+                <button class="minus-btn">-</button>
+                <input
+                  id="product9-quantity"
+                  type="number"
+                  class="quantity-input"
+                  value="1"
+                  min="1"
+                  max="10"
+                />
+                <button class="plus-btn">+</button>
               </div>
-              <button class="add-to-cart" onclick="">
-                Add to Cart
-              </button>
-            </div>
-
-            <div class="product-card">
-              <img
-                src="/assets/chocolateChipCookie.jpg"
-                alt="Chocolate Chip Cookie"
-                class="product-image"
-              />
-              <h3 class="product-name">Chocolate Chip Cookie</h3>
-              <p class="description">Description</p>
-              <p class="product-price">$99.00</p>
-              <div class="quantity">
-                <button class="minus-btn" onclick="">-</button>
-                <input type="number" class="quantity-input" value="1" min="1" max="10">
-                <button class="plus-btn" onclick="">+</button>
-              </div>
-              <button class="add-to-cart" onclick="">
+              <button class="add-to-cart" onclick="add(9, 'product9-quantity')">
                 Add to Cart
               </button>
             </div>
