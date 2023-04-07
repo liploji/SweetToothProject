@@ -147,25 +147,47 @@
       <div class="st-container">
         <div class="st-content">
           <h1 class="st-title">Contact Us</h1>
-          <div class="">
-            <img src="assets/map.png" alt="Map of Humber College. Main intersection is Humber College Blvd and Highway 7"/>
-            <p>Location: 205 Humber College Blvd, Etobicoke, ON M9W 5L7 
-            <p>Call : 111-222-3333</p>
-            <p>Email: ContactUs@sweettooth.ca </p>
-            <p> Hours of operation<br>
+          <div class="contactUsMap">
+            <a id="contactUsMap" href="https://www.google.ca/maps/place/Humber+College/@43.7288271,-79.6087686,17z/data=!3m2!4b1!5s0x882b3bada90c35b5:0x286a1fa9174ba649!4m6!3m5!1s0x882b3a5391c12321:0x747f0c3b5cdecaa0!8m2!3d43.7288232!4d-79.6065799!16zL20vMDMxcnMz" target ="_blank"> 
+            <img src="assets/map.png" alt="Map of Humber College. Main intersection is Humber College Blvd and Highway 7"/></a>
+          </div>
+          <div class="contactUsHours">
+            <p id="ophours"><b>Hours of operation</b><br>
             Monday: 8:00AM to 6:00PM<br>
             Tuesday: 8:00AM to 6:00PM<br>
             Wednesday : 8:00AM to 6:00PM<br>
             Friday: 8:00AM to 6:00PM<br>
             Saturday: 8:00AM to 5:00PM<br>
             Sunday: Closed </p>
-
-            <p>Follow Us on Social Media</p>
-            <p>Instagram: @SweetTooth</p>
-            <p>facebook: Sweet Tooth</p>
-
-            Insert Form for Inquiries
-
+          </div> 
+          <div class="contactUsInfo">
+            <img id="c-icon" src="assets/location.png" alt="Location symbol icon">
+            <p>Location: 205 Humber College Blvd, Etobicoke, ON M9W 5L7</p>
+            <img id="c-icon" src="assets/phone.png" alt="Telephone symbol icon">
+            <p>Call : 111-222-3333</p>
+            <img id="c-icon" src="assets/email.png" alt="E-mail symbol icon">
+            <p>Email: ContactUs@sweettooth.ca </p>
+          </div>
+          <div class="contactUsSocial">
+            <h3>Follow Us on Social Media</h3>
+            <a href="https://www.instagram.com/" target="_blank"><img src="assets/instagram-icon.svg" alt="Instagram icon" style="width:5%"></a>
+            <a href="https://www.facebook.com/" target="_blank"><img src="assets/facebook-icon.svg" alt="Facebook icon" style="width:5%"></a>
+          </div>
+          <div class="contactUsForm">
+            <h3>Quickly Get In Touch with Us</h3>
+            <p><b>Have a question about SweetTooth Bakery Services? Please fill out the form below.</b></p>
+            <form>
+              <img src="assets/icon.png" alt="SweetTooth Icon of a Cupcake with the letter S">
+              <label for="name">Name: </label> <br>
+              <input type="text" id="name" name="name" placeholder="Your name.." required><br>
+              <label for="email">Email: </label> <br>
+              <input type="email" id="email" name="email" placeholder="Your email.." required><br>
+              <label for="inquiry">Inquiry: </label> <br>
+              <textarea id="inquiry" name="inquiry" rows="4" cols="50" placeholder="Please ask your question(s) here..." required></textarea><br>
+              <input type="submit" value="Submit">
+              
+            </form>
+          </div>
           </div>
         </div>
       </div>
@@ -176,7 +198,8 @@
         <div class="st-footer-block">
           <div class="st-footer-block-inner1">
             <div class="st-footer-item">
-              <a href="#instagram"
+              <a href="https://www.instagram.com/" 
+              target="_blank"
                 ><img
                   class="st-footer-icon"
                   src="./assets/instagram-icon.svg"
@@ -186,7 +209,8 @@
               >
             </div>
             <div class="st-footer-item">
-              <a href="#facebook"
+              <a href="https://www.facebook.com/"
+              target="_blank"
                 ><img
                   class="st-footer-icon"
                   src="./assets/facebook-icon.svg"
