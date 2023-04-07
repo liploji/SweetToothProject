@@ -378,12 +378,13 @@ select {
 
 .product-image {
   width: 60%;
-  height: auto;
+  height: 60px; /*Make images same height for it to be all aligned in products*/
 }
 
 .product-name {
   font-size: 18px;
   margin: 10px 0;
+  height: 45px;
 }
 
 .product-price {
@@ -392,10 +393,13 @@ select {
   
 }
 .description {
-  background-color:  #d4cfcf;
+  background-color:#d4cfcf;
   border-radius: 5px;
   margin: 2px;
   padding: 5px;
+  height: 160px;
+  display: flex;
+  align-items: center;
 }
 .add-to-cart {
   background-color: #ede8e8;
@@ -509,7 +513,7 @@ input[type="number"]:focus {
 .italic_text {
   font-style: italic;
 }
-
+/*Shopping Cart*/
 .st-cart-card {
   width: 90%;
   height: 90px;
