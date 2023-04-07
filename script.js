@@ -1,26 +1,26 @@
 //-------------------------------------------------------------------------------------------
 
 // ARRAY OF PRODUCTS
-const products = [
-  {
-    id: 1,
-    name: "Strawberry Cripsy Shortcake",
-    price: 99.99,
-    quantity: 0,
-  },
-  {
-    id: 2,
-    name: "Black Forest Cake",
-    price: 99.99,
-    quantity: 0,
-  },
-  {
-    id: 3,
-    name: "Strawberry Cheesecake",
-    price: 99.99,
-    quantity: 0,
-  },
-];
+// const products = [
+//   {
+//     id: 1,
+//     name: "Strawberry Cripsy Shortcake",
+//     price: 99.99,
+//     quantity: 0,
+//   },
+//   {
+//     id: 2,
+//     name: "Black Forest Cake",
+//     price: 99.99,
+//     quantity: 0,
+//   },
+//   {
+//     id: 3,
+//     name: "Strawberry Cheesecake",
+//     price: 99.99,
+//     quantity: 0,
+//   },
+// ];
 
 //-------------------------------------------------------------------------------------------
 
@@ -78,9 +78,9 @@ $(".st-cart-button").click(() => {
   $("#cart").append(
     '<div onclick="closeCart()" class="st-close-button">X</div>'
   );
-  cart.forEach((product) => {
-    $("#cart").append("<div>" + product.name + "</div>");
-  });
+  // cart.forEach((product) => {
+  //   $("#cart").append("<div>" + product.name + "</div>");
+  // });
 });
 
 $(".st-menu-button").click(() => {
@@ -160,24 +160,24 @@ document.querySelectorAll(".accordion_button").forEach((button) => {
 //-------------------------------------------------------------------------------------------
 
 // CART ADD AND REMOVE PRODUCT
-let cart = [];
+// let cart = [];
 
-function add(id, quantity) {
-  let filteredProduct = products.filter((product) => product.id == id);
-  let filteredCart = cart.filter((product) => product.id == id);
-  if (filteredCart.length > 0) {
-    filteredCart[0].quantity += quantity;
-    cart = cart.filter((product) => product.id != id);
-    cart.push(filteredCart[0]);
-  } else {
-    filteredProduct[0].quantity += quantity;
-    cart.push(filteredProduct[0]);
-  }
-}
+// function add(id, quantity) {
+//   let filteredProduct = products.filter((product) => product.id == id);
+//   let filteredCart = cart.filter((product) => product.id == id);
+//   if (filteredCart.length > 0) {
+//     filteredCart[0].quantity += quantity;
+//     cart = cart.filter((product) => product.id != id);
+//     cart.push(filteredCart[0]);
+//   } else {
+//     filteredProduct[0].quantity += quantity;
+//     cart.push(filteredProduct[0]);
+//   }
+// }
 
-function remove(id) {
-  cart = cart.filter((product) => product.id != id);
-}
+// function remove(id) {
+//   cart = cart.filter((product) => product.id != id);
+// }
 
 
 //Products Page
@@ -220,3 +220,17 @@ minusBtns.forEach(function(minusBtn) {
     }
   });
 });
+
+const addToCartButtons = document.querySelectorAll('.add-to-cart');
+
+  addToCartButtons.forEach(button => {
+    button.addEventListener('click', () => {
+      const productCard = button.parentElement;
+      const productName = productCard.querySelector('.product-name').textContent;
+      const productPrice = productCard.querySelector('.product-price').textContent;
+      const productQuantity = productCard.querySelector('.quantity-input').value;
+      const cartItem = document.createElement('div');
+      cartItem.innerHTML = `${productName} - ${productPrice} x ${productQuantity}`;
+      document.getElementById('#cart').appendChild(cartItem);
+    });
+  });
