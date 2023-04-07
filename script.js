@@ -326,17 +326,3 @@ minusBtns.forEach(function (minusBtn) {
     }
   });
 });
-
-const addToCartButtons = document.querySelectorAll('.add-to-cart');
-
-  addToCartButtons.forEach(button => {
-    button.addEventListener('click', () => {
-      const productCard = button.parentElement;
-      const productName = productCard.querySelector('.product-name').textContent;
-      const productPrice = productCard.querySelector('.product-price').textContent;
-      const productQuantity = productCard.querySelector('.quantity-input').value;
-      const cartItem = document.createElement('div');
-      cartItem.innerHTML = `${productName} - ${productPrice} x ${productQuantity}`;
-      document.getElementById('#cart').appendChild(cartItem);
-    });
-  });
