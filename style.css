@@ -375,7 +375,7 @@ input, select {
 }
 
 .product-image {
-  width: 60%;
+  width: 50px;
   height: 60px; /*Make images same height for it to be all aligned in products*/
 }
 
