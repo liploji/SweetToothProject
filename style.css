@@ -289,7 +289,7 @@ a {
 }
 .st-comments {
   margin-bottom: 15px;
-  padding: 5px 5px 5px 5px;
+  padding: 5px;
   background-color: #ede8e8;
   border: 2px solid white;
   border-radius: 5px;
@@ -298,7 +298,7 @@ a {
   font-weight: 900;
   margin-right: 5px;
 }
-#product_name {
+#product {
   font-weight: normal;
 }
 .form-divider input,
@@ -315,8 +315,7 @@ form {
   border: 2px solid #eca779;
   border-radius: 5px;
 }
-input,
-select {
+input, select {
   background-color: #d8c0d8;
   border: none;
 }
@@ -337,10 +336,9 @@ select {
   background-color: #c983c9;
   color: #ede8e8;
   border: 2px solid #c983c9;
-  /* cursor: pointer; */
 }
 /*------------------------------------------------------*/
-
+/*Media queries*/
 @media only screen and (max-width: 1000px) {
   .st-button {
     display: none !important;
@@ -390,9 +388,10 @@ select {
 .product-price {
   font-size: 16px;
   font-weight: bold;
-  
+  margin-bottom: 0;
 }
 .description {
+  font-size: 16px;
   background-color:#d4cfcf;
   border-radius: 5px;
   margin: 2px;
@@ -400,6 +399,14 @@ select {
   height: 160px;
   display: flex;
   align-items: center;
+}
+
+.product-options {
+  margin-bottom: 10px;
+}
+.product-options p {
+  font-weight: 700;
+  margin-bottom: 0px;
 }
 .add-to-cart {
   background-color: #ede8e8;
@@ -469,7 +476,7 @@ input[type="number"]:focus {
   width:100%;
   padding-top: 100px;
 }
-
+/*------------------------------------------------------*/
 /*Contact Us page:*/
 div.contactUsMap{
   padding-top:20px;
@@ -503,7 +510,6 @@ img#c-icon{
   padding-right: 5px;
 }
 
-
 div.contactUsSocial{
   background-color:#D8C0D8;
   padding:5px;
@@ -531,8 +537,7 @@ form img{
   float:right;
   padding:20px;
 }
-
-
+/*------------------------------------------------------*/
 /* FAQ Page */
 .accordion_button {
   display: block;
@@ -582,6 +587,7 @@ form img{
 .italic_text {
   font-style: italic;
 }
+/*------------------------------------------------------*/
 /*Shopping Cart*/
 .st-cart-card {
   width: 90%;
