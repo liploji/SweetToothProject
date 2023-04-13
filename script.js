@@ -216,13 +216,11 @@ $(window).resize(() => {
 //-------------------------------------------------------------------------------------------
 
 // VALIDATE REVIEWS FORM
-function validateForm() {
+function thankYou() {
   let fName = document.getElementById("first").value;
-  if (fName == "") {
-    alert("First name must be provided.");
-  } else {
+  if (fName != "") {
     alert("Thank you for your input!");
-  }
+  } 
 }
 
 //-------------------------------------------------------------------------------------------
