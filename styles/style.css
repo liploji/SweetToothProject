@@ -528,6 +528,10 @@ div.contactUsSocial img{
   width:auto;
 }
 
+div.contactUsSocial img#s_img:hover{
+  transform: translateY(-7px);
+}
+
 div.contactUsForm h3{
   padding-top:20px;
 }
