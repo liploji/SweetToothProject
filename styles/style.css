@@ -363,7 +363,7 @@ input, select {
 
 .product-card {
   background-color: #ede8e8;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.102);
+  box-shadow: 0 2px 5px #0000001a;
   border-radius: 5px;
   width: 200px;
   margin: 10px;
@@ -376,7 +376,7 @@ input, select {
 
 .product-image {
   width: 50px;
-  height: 60px; /*Make images same height for it to be all aligned in products*/
+  height: 60px; 
 }
 
 .product-name {
