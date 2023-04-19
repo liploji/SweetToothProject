@@ -620,13 +620,15 @@ form img{
 .photo_block {
   position: relative;
 }
+
 .photo_block img {
   vertical-align: middle;
 }
+
 .member_photo {
   background-color: #d7d7db;
   border-radius: 50%;
-  box-shadow: 0 10px 30px 1px rgba(0,0,0,.3);
+  box-shadow: 1px 2px 5px 1px rgba(0,0,0,.3);
   height: 250px;
   margin: 0 0 40px;
   width: 250px;
