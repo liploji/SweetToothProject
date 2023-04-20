@@ -536,6 +536,19 @@ div.contactUsForm h3{
   padding-top:20px;
 }
 
+#contSubmit {
+  border: white 2px solid;
+  border-radius: 15%;
+  padding: 3px;
+  margin-top: 10px;
+}
+
+#contSubmit:hover{
+  color: white;
+  border:#c983c9 3px solid;
+  background-color:#c983c9
+}
+
 form img{
   width:30%;
   float:right;
